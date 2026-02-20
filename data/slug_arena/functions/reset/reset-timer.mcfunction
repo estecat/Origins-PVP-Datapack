@@ -1,0 +1,1 @@
+execute if score game.reset.timer variable matches 300.. run scoreboard players set game.reset variable 1

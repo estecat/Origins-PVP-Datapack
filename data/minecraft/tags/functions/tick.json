@@ -1,0 +1,28 @@
+{
+    "values": [
+        "slug_arena:slug-kill",
+        "slug_arena:options",
+        "slug_arena:map/selector",
+        "slug_arena:game-mechanics/game-start",
+        "slug_arena:game-mechanics/player-death",
+        "slug_arena:game-mechanics/gamemodes",
+        "slug_arena:game-mechanics/clocks",
+        "slug_arena:game-mechanics/teams",
+        "slug_arena:game-mechanics/worldborder",
+        "slug_arena:ready/status/set-condition",
+        "slug_arena:ready/status/reset-condition",
+        "slug_arena:ready/counter",
+        "slug_arena:ready/ticker",
+        "slug_arena:ready/glow",
+        "slug_arena:ready/lights",
+        "slug_arena:ready/titles",
+        "slug_arena:ready/sound-condition",
+        "slug_arena:ready/sound-execute",
+        "slug_arena:door/ticker",
+        "slug_arena:door/anim",
+        "slug_arena:door/sound",
+        "slug_arena:ready/taken",
+        "slug_arena:reset/reset-condition", 
+        "slug_arena:reset/reset-timer"
+    ]
+}

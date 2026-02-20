@@ -1,0 +1,20 @@
+{
+	"env": {
+		"gameVersion": "1.20.1"
+	},
+	"lint": {
+		"undeclaredSymbol": [
+			{
+				"if": [{ "category": [ "advancement" ]}],
+				"then": { "report": "block" }
+			}
+		]
+	},
+	"scoreboards": [
+		"variable",
+		"bool",
+		"options",
+		"wins",
+		"team-deaths"
+	]
+}

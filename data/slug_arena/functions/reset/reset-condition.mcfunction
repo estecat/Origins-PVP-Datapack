@@ -1,0 +1,1 @@
+execute if score game.reset variable matches 1 run function slug_arena:reset/reset-execute
