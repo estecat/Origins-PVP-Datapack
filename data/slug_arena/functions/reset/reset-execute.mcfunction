@@ -61,7 +61,7 @@ team remove south-east
 tp @a[gamemode=!creative] 312 30 -282
 gamemode adventure @a[gamemode=!creative]
 clear @a[gamemode=!creative]
-effect clear @a[gamemode=!creative]
+effect clear @a
 
 # Reset rooms
 clone 302 96 -143 322 107 -127 302 96 -125 masked
