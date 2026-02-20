@@ -19,17 +19,17 @@ execute if score game.start variable matches 1 if score game.mode variable match
 
 # ▄▄ ▄▄ ▄▄ ▄▄   ▀█ █░█ ▀█   ▄▄ ▄▄ ▄▄ ▄▄
 # ░░ ░░ ░░ ░░   █▄ ▀▄▀ █▄   ░░ ░░ ░░ ░░
-execute if score game.start variable matches 1 if score game.mode variable matches 0 run team add north-west
-execute if score game.start variable matches 1 if score game.mode variable matches 0 run team add south-east
+execute if score game.start variable matches 1 if score game.mode variable matches 1 run team add north-west
+execute if score game.start variable matches 1 if score game.mode variable matches 1 run team add south-east
 
-execute if score game.start variable matches 1 if score game.mode variable matches 0 run team modify north-west color blue
-execute if score game.start variable matches 1 if score game.mode variable matches 0 run team modify south-east color red
+execute if score game.start variable matches 1 if score game.mode variable matches 1 run team modify north-west color blue
+execute if score game.start variable matches 1 if score game.mode variable matches 1 run team modify south-east color red
 
-execute if score game.start variable matches 1 if score game.mode variable matches 0 run team join north-west @a[tag=player.north]
-execute if score game.start variable matches 1 if score game.mode variable matches 0 run team join north-west @a[tag=player.west]
+execute if score game.start variable matches 1 if score game.mode variable matches 1 run team join north-west @a[tag=player.north]
+execute if score game.start variable matches 1 if score game.mode variable matches 1 run team join north-west @a[tag=player.west]
 
-execute if score game.start variable matches 1 if score game.mode variable matches 0 run team join south-east @a[tag=player.south]
-execute if score game.start variable matches 1 if score game.mode variable matches 0 run team join south-east @a[tag=player.east]
+execute if score game.start variable matches 1 if score game.mode variable matches 1 run team join south-east @a[tag=player.south]
+execute if score game.start variable matches 1 if score game.mode variable matches 1 run team join south-east @a[tag=player.east]
 
 # Dust
 execute if score game.start variable matches 1 if score game.mode variable matches 1 as @a[team=north-west] at @s run particle minecraft:dust 0.2 0.5 1 2 ~ ~2.5 ~ 0 0 0 0 1 force @a[team=north-west]
