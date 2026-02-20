@@ -21,5 +21,5 @@ fillbiome 346 126 -39 278 131 -107 minecraft:desert
 fillbiome 346 137 -39 278 132 -107 minecraft:desert
 
 # Misc
-scoreboard players set map_number variable 6
+scoreboard players set map-number variable 6
 kill @e[type=minecraft:end_crystal]

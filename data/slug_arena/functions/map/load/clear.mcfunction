@@ -8,5 +8,5 @@ fill 278 121 -107 346 126 -39 air
 fill 278 127 -107 346 132 -39 air
 fill 278 133 -107 346 138 -39 air
 
-scoreboard players set map_number variable -1
+scoreboard players set map-number variable -1
 kill @e[type=minecraft:end_crystal]
