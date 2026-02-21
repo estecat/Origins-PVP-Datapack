@@ -4,7 +4,7 @@ execute if score ready.south variable matches 0 run team remove south.ready
 execute if score ready.east variable matches 0 run team remove east.ready
 execute if score ready.west variable matches 0 run team remove west.ready
 
-execute if score ready.north variable matches 0 run execute unless score game.start variable matches 0 run effect clear @a[tag=player.north] minecraft:glowing
+execute if score ready.north variable matches 0 run execute unless score game.start variable matches 1 run effect clear @a[tag=player.north] minecraft:glowing
 execute if score ready.south variable matches 0 run execute unless score game.start variable matches 1 run effect clear @a[tag=player.south] minecraft:glowing
 execute if score ready.east variable matches 0 run execute unless score game.start variable matches 1 run effect clear @a[tag=player.east] minecraft:glowing
 execute if score ready.west variable matches 0 run execute unless score game.start variable matches 1 run effect clear @a[tag=player.west] minecraft:glowing
@@ -26,7 +26,7 @@ execute if score ready.south variable matches 1 run team join south.ready @a[tag
 execute if score ready.east variable matches 1 run team join east.ready @a[tag=player.east]
 execute if score ready.west variable matches 1 run team join west.ready @a[tag=player.west]
 
-execute if score ready.north variable matches 1 run execute unless score game.start variable matches 0 run effect give @a[tag=player.north] minecraft:glowing infinite 1 true
-execute if score ready.south variable matches 1 run execute unless score game.start variable matches 1 run effect give @a[tag=player.south] minecraft:glowing infinite 1 true
-execute if score ready.east variable matches 1 run execute unless score game.start variable matches 1 run effect give @a[tag=player.east] minecraft:glowing infinite 1 true
-execute if score ready.west variable matches 1 run execute unless score game.start variable matches 1 run effect give @a[tag=player.west] minecraft:glowing infinite 1 true
+execute if score ready.north variable matches 1 run execute unless score game.start variable matches 1 run effect give @a[tag=player.north] minecraft:glowing 1 1 true
+execute if score ready.south variable matches 1 run execute unless score game.start variable matches 1 run effect give @a[tag=player.south] minecraft:glowing 1 1 true
+execute if score ready.east variable matches 1 run execute unless score game.start variable matches 1 run effect give @a[tag=player.east] minecraft:glowing 1 1 true
+execute if score ready.west variable matches 1 run execute unless score game.start variable matches 1 run effect give @a[tag=player.west] minecraft:glowing 1 1 true
