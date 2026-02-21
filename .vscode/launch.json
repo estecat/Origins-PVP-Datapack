@@ -8,7 +8,7 @@
             "name": "Publish datapack",
             "type": "PowerShell",
             "request": "launch",
-            "script": "D:/main-files/personal/projects/games/slugterra-origins/update-survival-datapack.ps1"
+            "script": "${workspaceFolder}/update.ps1"
         }
     ]
 }
