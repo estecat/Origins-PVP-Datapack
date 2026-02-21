@@ -5,17 +5,17 @@
 # █▄▀ ██▄ ░█░ ██▄ █▄▄ ░█░
 # If player does not exist, set to 2
 # If player does exist and is dead, set to 1
-execute if score game.start variable matches 1 unless score player.north.died flag matches -1 unless entity @a[tag=player.north] run scoreboard players set player.north.died flag 2
-execute if score game.start variable matches 1 unless score player.north.died flag matches -1 if entity @a[tag=player.north,nbt={Health:0.0f}] run scoreboard players set player.north.died flag 1
+execute if score game.start variable matches 1 if score player.north.died flag matches 0 unless entity @a[tag=player.north] run scoreboard players set player.north.died flag 2
+execute if score game.start variable matches 1 if score player.north.died flag matches 0 if entity @a[tag=player.north,nbt={Health:0.0f}] run scoreboard players set player.north.died flag 1
 
-execute if score game.start variable matches 1 unless score player.south.died flag matches -1 unless entity @a[tag=player.south] run scoreboard players set player.south.died flag 2
-execute if score game.start variable matches 1 unless score player.south.died flag matches -1 if entity @a[tag=player.south,nbt={Health:0.0f}] run scoreboard players set player.south.died flag 1
+execute if score game.start variable matches 1 if score player.south.died flag matches 0 unless entity @a[tag=player.south] run scoreboard players set player.south.died flag 2
+execute if score game.start variable matches 1 if score player.south.died flag matches 0 if entity @a[tag=player.south,nbt={Health:0.0f}] run scoreboard players set player.south.died flag 1
 
-execute if score game.start variable matches 1 unless score player.east.died flag matches -1 unless entity @a[tag=player.east] run scoreboard players set player.east.died flag 2
-execute if score game.start variable matches 1 unless score player.east.died flag matches -1 if entity @a[tag=player.east,nbt={Health:0.0f}] run scoreboard players set player.east.died flag 1
+execute if score game.start variable matches 1 if score player.east.died flag matches 0 unless entity @a[tag=player.east] run scoreboard players set player.east.died flag 2
+execute if score game.start variable matches 1 if score player.east.died flag matches 0 if entity @a[tag=player.east,nbt={Health:0.0f}] run scoreboard players set player.east.died flag 1
 
-execute if score game.start variable matches 1 unless score player.west.died flag matches -1 unless entity @a[tag=player.west] run scoreboard players set player.west.died flag 2
-execute if score game.start variable matches 1 unless score player.west.died flag matches -1 if entity @a[tag=player.west,nbt={Health:0.0f}] run scoreboard players set player.west.died flag 1
+execute if score game.start variable matches 1 if score player.west.died flag matches 0 unless entity @a[tag=player.west] run scoreboard players set player.west.died flag 2
+execute if score game.start variable matches 1 if score player.west.died flag matches 0 if entity @a[tag=player.west,nbt={Health:0.0f}] run scoreboard players set player.west.died flag 1
 
 
 
@@ -72,57 +72,83 @@ execute if score game.start variable matches 0 run scoreboard players set player
 execute if score game.start variable matches 0 run scoreboard players set player.west.died.announce flag 0
 
 
-
-# █▀█ █▄░█ █▀▀ █▀▀   █▀▄ █▀▀ ▄▀█ █▀▄
-# █▄█ █░▀█ █▄▄ ██▄   █▄▀ ██▄ █▀█ █▄▀
-# As long as the player is dead
-# Try to tp them
-execute if score player.north.died flag matches 1 run execute run tp @a[tag=player.north] @e[type=minecraft:marker,tag=player.north.marker,limit=1]
-execute if score player.south.died flag matches 1 run execute run tp @a[tag=player.south] @e[type=minecraft:marker,tag=player.south.marker,limit=1]
-execute if score player.east.died flag matches 1 run execute run tp @a[tag=player.east] @e[type=minecraft:marker,tag=player.east.marker,limit=1]
-execute if score player.west.died flag matches 1 run execute run tp @a[tag=player.west] @e[type=minecraft:marker,tag=player.west.marker,limit=1]
-
-# Try to set their gamemode
-execute if score player.north.died flag matches 1 run execute run gamemode spectator @a[tag=player.north]
-execute if score player.south.died flag matches 1 run execute run gamemode spectator @a[tag=player.south]
-execute if score player.east.died flag matches 1 run execute run gamemode spectator @a[tag=player.east]
-execute if score player.west.died flag matches 1 run execute run gamemode spectator @a[tag=player.west]
-
-# Try to clear them
-execute if score player.north.died flag matches 1 run execute run clear @a[tag=player.north]
-execute if score player.south.died flag matches 1 run execute run clear @a[tag=player.south]
-execute if score player.east.died flag matches 1 run execute run clear @a[tag=player.east]
-execute if score player.west.died flag matches 1 run execute run clear @a[tag=player.west]
-
-execute if score player.north.died flag matches 1 run execute run scoreboard players set player.north.died flag 2
-execute if score player.south.died flag matches 1 run execute run scoreboard players set player.south.died flag 2
-execute if score player.east.died flag matches 1 run execute run scoreboard players set player.east.died flag 2
-execute if score player.west.died flag matches 1 run execute run scoreboard players set player.west.died flag 2
-
-
 # █▀▄ █▀▀ ▄▀█ ▀█▀ █░█
 # █▄▀ ██▄ █▀█ ░█░ █▀█
-# Make them a loser unless their the last one
-execute if score player.north.died flag matches 2 run execute unless score player.count variable matches ..1 run tag @a[tag=player.north] add loser
-execute if score player.south.died flag matches 2 run execute if score player.count variable matches ..1 run tag @a[tag=player.south] add loser
-execute if score player.east.died flag matches 2 run execute if score player.count variable matches ..1 run tag @a[tag=player.east] add loser
-execute if score player.west.died flag matches 2 run execute unless score player.count variable matches ..1 run tag @a[tag=player.west] add loser
+## Make them a loser unless their the last one
+execute if score player.north.died flag matches 1 run execute unless score player.count variable matches ..1 run tag @a[tag=player.north] add loser
+execute if score player.south.died flag matches 1 run execute if score player.count variable matches ..1 run tag @a[tag=player.south] add loser
+execute if score player.east.died flag matches 1 run execute if score player.count variable matches ..1 run tag @a[tag=player.east] add loser
+execute if score player.west.died flag matches 1 run execute unless score player.count variable matches ..1 run tag @a[tag=player.west] add loser
 
-# When a player dies, lower the player count
+## Score
 # FFA
+execute if score player.north.died flag matches 1 run execute unless score player.count variable matches ..1 run scoreboard players remove player.count variable 1
+execute if score player.south.died flag matches 1 run execute unless score player.count variable matches ..1 run scoreboard players remove player.count variable 1
+execute if score player.east.died flag matches 1 run execute unless score player.count variable matches ..1 run scoreboard players remove player.count variable 1
+execute if score player.west.died flag matches 1 run execute unless score player.count variable matches ..1 run scoreboard players remove player.count variable 1
+
+# 2v2
+execute if score player.north.died flag matches 1 run scoreboard players add north-west team-deaths 1
+execute if score player.west.died flag matches 1 run scoreboard players add north-west team-deaths 1
+execute if score player.south.died flag matches 1 run scoreboard players add south-east team-deaths 1
+execute if score player.east.died flag matches 1 run scoreboard players add south-east team-deaths 1
+
+execute if score player.north.died flag matches 1 run say fart
+execute if score player.west.died flag matches 1 run say hart
+execute if score player.south.died flag matches 1 run say dart
+execute if score player.east.died flag matches 1 run say tart
+
+## Move on to next step
+execute if score player.north.died flag matches 1 run scoreboard players set player.north.died flag 3
+execute if score player.south.died flag matches 1 run scoreboard players set player.south.died flag 3
+execute if score player.east.died flag matches 1 run scoreboard players set player.east.died flag 3
+execute if score player.west.died flag matches 1 run scoreboard players set player.west.died flag 3
+
+## Non-existence
 execute if score player.north.died flag matches 2 run execute unless score player.count variable matches ..1 run scoreboard players remove player.count variable 1
 execute if score player.south.died flag matches 2 run execute unless score player.count variable matches ..1 run scoreboard players remove player.count variable 1
 execute if score player.east.died flag matches 2 run execute unless score player.count variable matches ..1 run scoreboard players remove player.count variable 1
 execute if score player.west.died flag matches 2 run execute unless score player.count variable matches ..1 run scoreboard players remove player.count variable 1
 
-# 2v2
-execute if score player.north.died flag matches 2 run scoreboard players add north-west team-deaths 1
-execute if score player.west.died flag matches 2 run scoreboard players add north-west team-deaths 1
-execute if score player.south.died flag matches 2 run scoreboard players add south-east team-deaths 1
-execute if score player.east.died flag matches 2 run scoreboard players add south-east team-deaths 1
+execute if score player.north.died flag matches 2 run execute unless score south-east team-deaths matches 2 run scoreboard players add north-west team-deaths 1
+execute if score player.west.died flag matches 2 run execute unless score south-east team-deaths matches 2 run scoreboard players add north-west team-deaths 1
+execute if score player.south.died flag matches 2 run execute unless score north-west team-deaths matches 2 run scoreboard players add south-east team-deaths 1
+execute if score player.east.died flag matches 2 run execute unless score north-west team-deaths matches 2 run scoreboard players add south-east team-deaths 1
 
-# If player died, nothing else is needed to be done, so set the flag to -1
-execute if score player.north.died flag matches 2 run scoreboard players set player.north.died flag -1
-execute if score player.south.died flag matches 2 run scoreboard players set player.south.died flag -1
-execute if score player.east.died flag matches 2 run scoreboard players set player.east.died flag -1
-execute if score player.west.died flag matches 2 run scoreboard players set player.west.died flag -1
+execute if score player.north.died flag matches 2 run scoreboard players set player.north.died flag 4
+execute if score player.south.died flag matches 2 run scoreboard players set player.south.died flag 4
+execute if score player.east.died flag matches 2 run scoreboard players set player.east.died flag 4
+execute if score player.west.died flag matches 2 run scoreboard players set player.west.died flag 4
+
+
+# █▀█ █▀█ █▀ ▀█▀ ▄▄ █▀▄▀█ █▀█ █▀█ ▀█▀ █▀▀ █▀▄▀█
+# █▀▀ █▄█ ▄█ ░█░ ░░ █░▀░█ █▄█ █▀▄ ░█░ ██▄ █░▀░█
+## As long as the player is dead
+# Try to tp them
+execute if score player.north.died flag matches 3..4 run execute run tp @a[tag=player.north] @e[type=minecraft:marker,tag=player.north.marker,limit=1]
+execute if score player.south.died flag matches 3..4 run execute run tp @a[tag=player.south] @e[type=minecraft:marker,tag=player.south.marker,limit=1]
+execute if score player.east.died flag matches 3..4 run execute run tp @a[tag=player.east] @e[type=minecraft:marker,tag=player.east.marker,limit=1]
+execute if score player.west.died flag matches 3..4 run execute run tp @a[tag=player.west] @e[type=minecraft:marker,tag=player.west.marker,limit=1]
+
+# Try to set their gamemode
+execute if score player.north.died flag matches 3..4 run execute run gamemode spectator @a[tag=player.north]
+execute if score player.south.died flag matches 3..4 run execute run gamemode spectator @a[tag=player.south]
+execute if score player.east.died flag matches 3..4 run execute run gamemode spectator @a[tag=player.east]
+execute if score player.west.died flag matches 3..4 run execute run gamemode spectator @a[tag=player.west]
+
+# Try to clear them
+execute if score player.north.died flag matches 3..4 run execute run clear @a[tag=player.north]
+execute if score player.south.died flag matches 3..4 run execute run clear @a[tag=player.south]
+execute if score player.east.died flag matches 3..4 run execute run clear @a[tag=player.east]
+execute if score player.west.died flag matches 3..4 run execute run clear @a[tag=player.west]
+
+# Wait for them to respawn
+execute if score player.north.died flag matches 3 unless entity @a[tag=player.north,nbt={Health:0.0f}] run execute run scoreboard players set player.north.died flag -1
+execute if score player.south.died flag matches 3 unless entity @a[tag=player.south,nbt={Health:0.0f}] run execute run scoreboard players set player.south.died flag -1
+execute if score player.east.died flag matches 3 unless entity @a[tag=player.east,nbt={Health:0.0f}] run execute run scoreboard players set player.east.died flag -1
+execute if score player.west.died flag matches 3 unless entity @a[tag=player.west,nbt={Health:0.0f}] run execute run scoreboard players set player.west.died flag -1
+
+execute if score player.north.died flag matches 4 run execute run scoreboard players set player.north.died flag -1
+execute if score player.south.died flag matches 4 run execute run scoreboard players set player.south.died flag -1
+execute if score player.east.died flag matches 4 run execute run scoreboard players set player.east.died flag -1
+execute if score player.west.died flag matches 4 run execute run scoreboard players set player.west.died flag -1
