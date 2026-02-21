@@ -1,6 +1,10 @@
 execute if score ready.timer variable matches 120 run scoreboard players set game.start variable 1
+
 execute if score game.start variable matches 1 run gamerule fallDamage true
 execute if score game.start variable matches 0 run gamerule fallDamage false
+
+execute if score game.start variable matches 1 run gamerule noTamedSlugKilling true
+execute if score game.start variable matches 0 run gamerule noTamedSlugKilling false
 
 # Start stuff
 execute if score game.start variable matches 1 if score game.start flag matches 0 run give @a[tag=player] minecraft:cooked_beef 3

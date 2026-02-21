@@ -9,7 +9,6 @@ execute if score game.start variable matches 1 if score game.mode variable match
 
 execute if score game.mode.ffa.win flag matches 1 run execute as @a at @s run playsound minecraft:entity.ender_dragon.death ambient @s ~ ~ ~ 0.2
 execute if score game.mode.ffa.win flag matches 1 run execute as @a at @s run playsound slug_arena:downtime music @a ~ ~ ~ 0.15 1
-execute if score game.mode.ffa.win flag matches 1 run execute as @a at @s run gamerule noTamedSlugKilling false
 
 ## When FFA is won
 # Add 1 win to the winning player
@@ -70,7 +69,6 @@ execute if score game.start variable matches 1 if score game.mode variable match
 
 execute if score game.mode.2v2.win flag matches 1 run execute as @a at @s run playsound minecraft:entity.ender_dragon.death ambient @s ~ ~ ~ 0.2
 execute if score game.mode.2v2.win flag matches 1 run execute run playsound slug_arena:downtime music @a ~ ~ ~ 0.15 1
-execute if score game.mode.2v2.win flag matches 1 run execute run gamerule noTamedSlugKilling false
 
 execute if score game.mode.2v2.win flag matches 1 run execute if score south-east team-deaths matches 2 run xp add @a[team=north-west] 1 levels
 execute if score game.mode.2v2.win flag matches 1 run execute if score north-west team-deaths matches 2 run xp add @a[team=south-east] 1 levels
