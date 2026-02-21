@@ -31,7 +31,7 @@ fillbiome 346 120 -39 278 125 -107 minecraft:plains
 fillbiome 346 126 -39 278 131 -107 minecraft:plains
 fillbiome 346 137 -39 278 132 -107 minecraft:plains
 
-setblock 279 94 -106 redstone_block
+setblock 278 95 -106 redstone_block
 
 # Misc
 scoreboard players set map-number variable 3
