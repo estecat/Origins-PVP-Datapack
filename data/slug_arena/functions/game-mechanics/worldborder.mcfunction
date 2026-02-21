@@ -10,13 +10,21 @@ execute if score worldborder.event flag matches 1 run execute as @a at @s run pl
 execute if score worldborder.event flag matches 1 run worldborder set 69
 execute if score worldborder.event flag matches 1 run scoreboard players set worldborder variable 1
 
+# Medieval
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 1 run worldborder set 23 50
+# Volcano
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 2 run worldborder set 21 50
+# Lab
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 3 run worldborder set 41 20
+# Legacy
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 4 run worldborder set 23 50
+# Jungle
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 5 run worldborder set 33 40
+# Sand
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 6 run worldborder set 21 50
-execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 7 run worldborder set 27 50
+# Kowloon
+execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 7 run worldborder set 29 50
+# City
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 8 run worldborder set 13 60
 
 
