@@ -94,6 +94,11 @@ execute if score player.south.died flag matches 1 run execute run clear @a[tag=p
 execute if score player.east.died flag matches 1 run execute run clear @a[tag=player.east]
 execute if score player.west.died flag matches 1 run execute run clear @a[tag=player.west]
 
+execute if score player.north.died flag matches 1 run execute run scoreboard players set player.north.died flag 2
+execute if score player.south.died flag matches 1 run execute run scoreboard players set player.south.died flag 2
+execute if score player.east.died flag matches 1 run execute run scoreboard players set player.east.died flag 2
+execute if score player.west.died flag matches 1 run execute run scoreboard players set player.west.died flag 2
+
 
 # █▀▄ █▀▀ ▄▀█ ▀█▀ █░█
 # █▄▀ ██▄ █▀█ ░█░ █▀█
