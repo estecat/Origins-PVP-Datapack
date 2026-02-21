@@ -93,11 +93,6 @@ execute if score player.west.died flag matches 1 run scoreboard players add nort
 execute if score player.south.died flag matches 1 run scoreboard players add south-east team-deaths 1
 execute if score player.east.died flag matches 1 run scoreboard players add south-east team-deaths 1
 
-execute if score player.north.died flag matches 1 run say fart
-execute if score player.west.died flag matches 1 run say hart
-execute if score player.south.died flag matches 1 run say dart
-execute if score player.east.died flag matches 1 run say tart
-
 ## Move on to next step
 execute if score player.north.died flag matches 1 run scoreboard players set player.north.died flag 3
 execute if score player.south.died flag matches 1 run scoreboard players set player.south.died flag 3
