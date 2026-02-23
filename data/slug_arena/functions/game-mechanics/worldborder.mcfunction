@@ -1,11 +1,19 @@
+# Set spawnpoint at location when worldborder is on
+execute if score worldborder variable matches 0 run setworldspawn 312 35 -297
+execute if score worldborder variable matches 0 run spawnpoint @a 312 35 -297
+
+execute if score worldborder variable matches 1 run setworldspawn 312 140 -73
+execute if score worldborder variable matches 1 run spawnpoint @a 312 140 -73
+execute as @a[tag=!player,x=311.0,y=140,z=-74.0,dx=3,dz=3] run gamemode spectator @s
+
+
+# Set worldborder size with time
+execute if score youretakingtoolong variable matches 5400.. if score worldborder.event flag matches 0 run scoreboard players set worldborder.event flag 1
+
 # playsound slug_arena:world_border neutral @a 278 119 -107 4
 # playsound slug_arena:world_border neutral @a 346 119 -39 4
 # playsound slug_arena:world_border neutral @a 346 119 -107 4
 # playsound slug_arena:world_border neutral @a 278 119 -39 4
-
-execute if score youretakingtoolong variable matches 5400.. if score worldborder.event flag matches 0 run scoreboard players set worldborder.event flag 1
-
-
 execute if score worldborder.event flag matches 1 run execute as @a at @s run playsound slug_arena:world_border master @s ~ ~ ~ 6 1
 execute if score worldborder.event flag matches 1 run worldborder set 69
 execute if score worldborder.event flag matches 1 run scoreboard players set worldborder variable 1
@@ -26,7 +34,6 @@ execute if score worldborder.event flag matches 1 run execute if score map-numbe
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 7 run worldborder set 29 50
 # City
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 8 run worldborder set 13 60
-
 
 #execute if score youretakingtoolong variable matches 5400.. if score map-number variable matches 9 run 
 
