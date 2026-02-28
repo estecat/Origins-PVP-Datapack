@@ -4,51 +4,51 @@
   "files.eol": "\n",
   "folder-color.pathColors": [
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\ready\\status\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\ready\\status\\",
       "color": "foldercolorizer.color_00cc99"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\ready\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\ready\\",
       "color": "foldercolorizer.color_006633"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\ready\\sound\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\ready\\sound\\",
       "color": "foldercolorizer.color_00cc99"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\ready\\sound-condition.mcfunction\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\ready\\sound-condition.mcfunction\\",
       "color": "foldercolorizer.color_00cc99"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\ready\\sound-execute.mcfunction\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\ready\\sound-execute.mcfunction\\",
       "color": "foldercolorizer.color_00cc99"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\map\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\map\\",
       "color": "foldercolorizer.color_cc6633"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\map\\load\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\map\\load\\",
       "color": "foldercolorizer.color_ff9933"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\reset\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\reset\\",
       "color": "foldercolorizer.color_3366ff"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\reset-condition.mcfunction\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\reset-condition.mcfunction\\",
       "color": "foldercolorizer.color_3366ff"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\reset-execute.mcfunction\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\reset-execute.mcfunction\\",
       "color": "foldercolorizer.color_3366ff"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\door\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\door\\",
       "color": "foldercolorizer.color_990066"
     },
     {
-      "folderPath": "data-pack\\data\\slug_arena\\functions\\game-mechanics\\",
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game-mechanics\\",
       "color": "foldercolorizer.color_33ccff"
     }
   ]
