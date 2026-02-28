@@ -3,6 +3,7 @@
         "slug_arena:slug-kill",
         "slug_arena:options",
         "slug_arena:hide-scoreboard",
+        "slug_arena:lobby",
         "slug_arena:map/selector",
         "slug_arena:game-mechanics/game-start",
         "slug_arena:game-mechanics/player-death",
