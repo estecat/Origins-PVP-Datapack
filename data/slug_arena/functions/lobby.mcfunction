@@ -57,7 +57,7 @@ setblock 315 34 -291 oak_trapdoor[facing=east,open=true]
 
 setblock 309 30 -287 oak_trapdoor[facing=west,open=true]
 setblock 309 32 -289 oak_trapdoor[facing=west,open=true]
-setblock 209 34 -291 oak_trapdoor[facing=west,open=true]
+setblock 309 34 -291 oak_trapdoor[facing=west,open=true]
 
 # Sides
 setblock 305 34 -296 oak_trapdoor[facing=west,open=true]
