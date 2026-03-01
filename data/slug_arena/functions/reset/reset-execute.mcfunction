@@ -77,14 +77,9 @@ setblock 353 110 -63 air
 schedule function slug_arena:reset/schedules/dropper 4
 
 # Blasters
-fill 300 102 -115 300 99 -113 minecraft:redstone_block
-fill 354 102 -85 352 99 -85 minecraft:redstone_block
-fill 324 102 -31 324 99 -33 minecraft:redstone_block
-fill 270 102 -61 272 99 -61 minecraft:redstone_block
-
-fill 300 102 -115 300 99 -113 air
-fill 354 102 -85 352 99 -85 air
-fill 324 102 -31 324 99 -33 air
-fill 270 102 -61 272 99 -61 air
+scoreboard players set page.change.west flag 0
+scoreboard players set page.change.east flag 0
+scoreboard players set page.change.north flag 0
+scoreboard players set page.change.south flag 0
 
 scoreboard players set game.reset variable 0

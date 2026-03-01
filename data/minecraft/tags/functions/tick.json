@@ -11,6 +11,8 @@
         "slug_arena:game-mechanics/clocks",
         "slug_arena:game-mechanics/teams",
         "slug_arena:game-mechanics/worldborder",
+        "slug_arena:blasters/blaster-pages",
+        "slug_arena:blasters/trigger",
         "slug_arena:ready/status/set-condition",
         "slug_arena:ready/status/reset-condition",
         "slug_arena:ready/counter",
