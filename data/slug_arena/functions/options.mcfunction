@@ -62,7 +62,7 @@ execute as @a[x=312,y=29,z=-282,distance=..5] unless score game.start variable m
 execute as @a[x=312,y=29,z=-282,distance=..5] unless score game.start variable matches 1 unless entity @s[tag=player,gamemode=adventure] if score @s options matches 16 run scoreboard players set map variable 6
 execute as @a[x=312,y=29,z=-282,distance=..5] unless score game.start variable matches 1 unless entity @s[tag=player,gamemode=adventure] if score @s options matches 17 run scoreboard players set map variable 7
 execute as @a[x=312,y=29,z=-282,distance=..5] unless score game.start variable matches 1 unless entity @s[tag=player,gamemode=adventure] if score @s options matches 18 run scoreboard players set map variable 8
-
+execute as @a[x=312,y=29,z=-282,distance=..5] unless score game.start variable matches 1 unless entity @s[tag=player,gamemode=adventure] if score @s options matches 19 run scoreboard players set map variable 9
 # Sound
 execute as @a unless score @s options matches 0 at @s run execute as @a at @s run playsound block.note_block.bit master @s ~ ~ ~ 1 1
 

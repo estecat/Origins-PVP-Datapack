@@ -36,5 +36,8 @@ execute if score map variable matches 7 run tellraw @a [{"text": "Selected: ", "
 execute if score map variable matches 8 run function slug_arena:map/load/city
 execute if score map variable matches 8 run tellraw @a [{"text": "Selected: ", "color": "yellow"}, {"text": "Sewer City", "color": "gray", "bold": true}]
 
+execute if score map variable matches 9 run function slug_arena:map/load/frozen
+execute if score map variable matches 9 run tellraw @a [{"text": "Selected: ", "color": "yellow"}, {"text": "Frozen Lake", "color": "aqua", "bold": true}]
+
 execute unless score map variable matches 0 as @a at @s run playsound minecraft:block.large_amethyst_bud.place record @s ~ ~ ~
 execute unless score map variable matches 0 run scoreboard players set map variable 0
