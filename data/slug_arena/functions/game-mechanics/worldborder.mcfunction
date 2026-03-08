@@ -34,6 +34,8 @@ execute if score worldborder.event flag matches 1 run execute if score map-numbe
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 7 run worldborder set 29 50
 # City
 execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 8 run worldborder set 13 60
+# Frozen
+execute if score worldborder.event flag matches 1 run execute if score map-number variable matches 9 run worldborder set 15 60
 
 #execute if score youretakingtoolong variable matches 5400.. if score map-number variable matches 9 run 
 
