@@ -1,1 +1,0 @@
-execute unless entity @a[name=lazynor_cat] unless entity @a[name=estecat] run scoreboard objectives setdisplay sidebar

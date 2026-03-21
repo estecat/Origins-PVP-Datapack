@@ -1,14 +1,15 @@
-# When page is below minimum, set to maximum
-execute if score blaster.west variable matches ..0 run scoreboard players set blaster.west variable 4
-execute if score blaster.east variable matches ..0 run scoreboard players set blaster.east variable 4
+## Boundary
+# Maximum
 execute if score blaster.north variable matches ..0 run scoreboard players set blaster.north variable 4
 execute if score blaster.south variable matches ..0 run scoreboard players set blaster.south variable 4
+execute if score blaster.east variable matches ..0 run scoreboard players set blaster.east variable 4
+execute if score blaster.west variable matches ..0 run scoreboard players set blaster.west variable 4
 
-# When page is above maximum, set to minimum
-execute if score blaster.west variable matches 5.. run scoreboard players set blaster.west variable 1
-execute if score blaster.east variable matches 5.. run scoreboard players set blaster.east variable 1
+# Minimum
 execute if score blaster.north variable matches 5.. run scoreboard players set blaster.north variable 1
 execute if score blaster.south variable matches 5.. run scoreboard players set blaster.south variable 1
+execute if score blaster.east variable matches 5.. run scoreboard players set blaster.east variable 1
+execute if score blaster.west variable matches 5.. run scoreboard players set blaster.west variable 1
 
 
 

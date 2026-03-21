@@ -4,52 +4,76 @@
   "files.eol": "\n",
   "folder-color.pathColors": [
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\ready\\status\\",
-      "color": "foldercolorizer.color_00cc99"
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\trunctions\\",
+      "color": "foldercolorizer.color_333333"
     },
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\ready\\",
-      "color": "foldercolorizer.color_006633"
+      "folderPath": "Origins-PVP-Datapack\\.gitignore\\",
+      "color": "foldercolorizer.color_666666"
     },
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\ready\\sound\\",
-      "color": "foldercolorizer.color_00cc99"
+      "folderPath": "Origins-PVP-Datapack\\.spyglass\\",
+      "color": "foldercolorizer.color_666666"
     },
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\ready\\sound-condition.mcfunction\\",
-      "color": "foldercolorizer.color_00cc99"
+      "folderPath": "Origins-PVP-Datapack\\pack.mcmeta\\",
+      "color": "foldercolorizer.color_666666"
     },
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\ready\\sound-execute.mcfunction\\",
-      "color": "foldercolorizer.color_00cc99"
+      "folderPath": "Origins-PVP-Datapack\\update.ps1\\",
+      "color": "foldercolorizer.color_666666"
     },
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\map\\",
-      "color": "foldercolorizer.color_cc6633"
+      "folderPath": "Origins-PVP-Datapack\\doc\\",
+      "color": "foldercolorizer.color_00cccc"
     },
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\map\\load\\",
-      "color": "foldercolorizer.color_ff9933"
+      "folderPath": "Origins-PVP-Datapack\\.vscode\\",
+      "color": "foldercolorizer.color_666666"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\data\\minecraft\\tags\\functions\\",
+      "color": "foldercolorizer.color_666666"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\data\\minecraft\\tags\\functions\\tick.json\\",
+      "color": "foldercolorizer.color_ffffff"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game-off\\",
+      "color": "foldercolorizer.color_cc3333"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game-on\\",
+      "color": "foldercolorizer.color_33cc33"
     },
     {
       "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\reset\\",
       "color": "foldercolorizer.color_3366ff"
     },
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\reset-condition.mcfunction\\",
-      "color": "foldercolorizer.color_3366ff"
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\general\\",
+      "color": "foldercolorizer.color_ffffff"
     },
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\reset-execute.mcfunction\\",
-      "color": "foldercolorizer.color_3366ff"
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\options\\",
+      "color": "foldercolorizer.color_ffffff"
     },
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\door\\",
-      "color": "foldercolorizer.color_990066"
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\blasters\\",
+      "color": "foldercolorizer.color_cc6600"
     },
     {
-      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game-mechanics\\",
-      "color": "foldercolorizer.color_33ccff"
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game-off\\execute\\ready\\north\\",
+      "color": "foldercolorizer.color_009933"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game-off\\execute\\ready\\south\\",
+      "color": "foldercolorizer.color_cccc33"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game-off\\execute\\ready\\west\\",
+      "color": "foldercolorizer.color_3366cc"
     }
   ]
 }
