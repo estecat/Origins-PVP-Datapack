@@ -1,4 +1,5 @@
 # Game
+gamerule fallDamage false
 scoreboard players set game.reset.timer variable 0
 scoreboard players set game.start variable 0
 scoreboard players set door.status variable 0
@@ -31,6 +32,11 @@ scoreboard players set game.mode.ffa.win.fireworks.west flag 0
 scoreboard players set game.mode.2v2.win.fireworks flag 0
 
 scoreboard players set worldborder.event flag 0
+
+scoreboard players set player.north.died.announce flag 0
+scoreboard players set player.south.died.announce flag 0
+scoreboard players set player.east.died.announce flag 0
+scoreboard players set player.west.died.announce flag 0
 
 gamerule fallDamage false
 kill @e[type=item]
