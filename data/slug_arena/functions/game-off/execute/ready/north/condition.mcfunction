@@ -1,2 +1,0 @@
-execute if score ready.north variable matches 0 run function slug_arena:game-off/execute/ready/north/off
-execute if score ready.north variable matches 1 run function slug_arena:game-off/execute/ready/north/on

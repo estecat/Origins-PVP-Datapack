@@ -1,9 +1,0 @@
-execute if score game.start variable matches 0 run function slug_arena:game-off/execute/slug-kill
-execute if score game.start variable matches 0 run function slug_arena:game-off/execute/slug-nametag
-execute if score game.start variable matches 0 run function slug_arena:game-off/execute/ready/non-existence
-execute if score game.start variable matches 0 run function slug_arena:game-off/execute/ready/status-condition
-execute if score game.start variable matches 0 run function slug_arena:game-off/execute/ready/ticker
-execute if score game.start variable matches 0 run function slug_arena:game-off/execute/ready/north/condition
-execute if score game.start variable matches 0 run function slug_arena:game-off/execute/ready/south/condition
-execute if score game.start variable matches 0 run function slug_arena:game-off/execute/ready/east/condition
-execute if score game.start variable matches 0 run function slug_arena:game-off/execute/ready/west/condition

@@ -1,0 +1,2 @@
+execute if score ready.east variable matches 0 run function slug_arena:game_off/execute/ready/east/off
+execute if score ready.east variable matches 1 run function slug_arena:game_off/execute/ready/east/on
