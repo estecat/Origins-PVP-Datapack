@@ -6,7 +6,6 @@ execute if score game.start variable matches 1 run function slug_arena:game_on/e
 execute if score game.start variable matches 1 run function slug_arena:game_on/execute/on-game-start
 execute if score game.start variable matches 1 run function slug_arena:game_on/execute/player-death
 execute if score game.start variable matches 1 run function slug_arena:game_on/execute/setup-teams
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/slug-owner-particle
 execute if score game.start variable matches 1 run function slug_arena:game_on/execute/too-long
 execute if score game.start variable matches 1 run function slug_arena:game_on/execute/worldborder
 execute if score game.start variable matches 1 run function slug_arena:game_on/execute/win-conditions/fireworks
