@@ -2,8 +2,7 @@
 gamerule fallDamage false
 scoreboard players set game.reset.timer variable 0
 scoreboard players set game.start variable 0
-scoreboard players set door.status variable 0
-scoreboard players set door.progress variable 0
+scoreboard players set door variable 0
 scoreboard players set youretakingtoolong variable 0
 scoreboard players set player.count variable 4
 scoreboard players set ready.players variable 0
