@@ -1,5 +1,5 @@
 # Counter
-scoreboard players set ready.east flag 1
+execute unless score ready.east flag matches -1 run scoreboard players set ready.east flag 1
 execute if score ready.east flag matches 1 run scoreboard players add ready.players variable 1
 execute if score ready.east flag matches 1 run tellraw @a {"text": "Red is ready!", "color": "red"}
 execute if score ready.east flag matches 1 run scoreboard players set ready.east flag -1
