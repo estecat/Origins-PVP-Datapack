@@ -1,3 +1,14 @@
 {
-  "values": []
+  "values": [
+    "slug_arena:general/lobby",
+    "slug_arena:general/player-taken",
+    "slug_arena:general/players-away",
+    "slug_arena:blasters/trigger",
+    "slug_arena:blasters/blaster-pages",
+    "slug_arena:options/condition",
+    "slug_arena:game_off/condition",
+    "slug_arena:game_on/condition",
+    "slug_arena:reset/condition",
+    "slug_arena:reset/timer"
+  ]
 }
