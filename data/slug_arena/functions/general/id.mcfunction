@@ -1,0 +1,1 @@
+scoreboard players add rand id 1

@@ -10,3 +10,4 @@ execute if score game.start variable matches 1 run function slug_arena:game_on/e
 execute if score game.start variable matches 1 run function slug_arena:game_on/execute/worldborder
 execute if score game.start variable matches 1 run function slug_arena:game_on/execute/win-conditions/fireworks
 execute if score game.start variable matches 1 run function slug_arena:game_on/execute/win-conditions/trigger
+execute if score game.start variable matches 1 run function slug_arena:game_on/execute/player-id

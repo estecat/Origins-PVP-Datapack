@@ -8,3 +8,4 @@ execute if score game.start variable matches 0 run function slug_arena:game_off/
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/ready/south/condition
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/ready/east/condition
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/ready/west/condition
+execute if score game.start variable matches 0 run function slug_arena:game_off/execute/player-id
