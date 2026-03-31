@@ -1,4 +1,5 @@
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/slug-kill
+execute if score game.start variable matches 0 run function slug_arena:game_off/execute/game-start
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/slug-nametag
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/ready/non-existence
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/ready/status-condition
