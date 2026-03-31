@@ -6,6 +6,7 @@ scoreboard players set door variable 0
 scoreboard players set youretakingtoolong variable 0
 scoreboard players set player.count variable 4
 scoreboard players set ready.players variable 0
+scoreboard players set ready.timer variable 0
 scoreboard players set north-west team-deaths 0
 scoreboard players set south-east team-deaths 0
 
@@ -88,3 +89,5 @@ scoreboard players set page.change.north flag 0
 scoreboard players set page.change.south flag 0
 
 scoreboard players set game.reset variable 0
+
+scoreboard players set @a id 0
