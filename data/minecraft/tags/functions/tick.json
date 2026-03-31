@@ -6,6 +6,7 @@
     "slug_arena:blasters/trigger",
     "slug_arena:blasters/blaster-pages",
     "slug_arena:options/condition",
+    "slug_arena:options/map/selector",
     "slug_arena:game_off/condition",
     "slug_arena:game_on/condition",
     "slug_arena:reset/condition",
