@@ -3,6 +3,7 @@
     "slug_arena:general/lobby",
     "slug_arena:general/player-taken",
     "slug_arena:general/players-away",
+    "slug_arena:general/door-close",
     "slug_arena:blasters/trigger",
     "slug_arena:blasters/blaster-pages",
     "slug_arena:options/condition",

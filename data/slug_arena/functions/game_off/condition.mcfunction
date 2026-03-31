@@ -3,7 +3,6 @@ execute if score game.start variable matches 0 run function slug_arena:game_off/
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/slug-nametag
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/ready/non-existence
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/ready/status-condition
-execute if score game.start variable matches 0 run function slug_arena:game_off/execute/door
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/ready/ticker
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/ready/north/condition
 execute if score game.start variable matches 0 run function slug_arena:game_off/execute/ready/south/condition
