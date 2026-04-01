@@ -8,7 +8,7 @@ execute as @a[tag=!player,x=311.0,y=140,z=-74.0,dx=3,dz=3] run gamemode spectato
 
 
 # Set worldborder size with time
-execute if score youretakingtoolong variable matches 5400.. if score worldborder.event flag matches 0 run scoreboard players set worldborder.event flag 1
+execute if score youretakingtoolong variable matches 6000.. if score worldborder.event flag matches 0 run scoreboard players set worldborder.event flag 1
 
 execute if score worldborder.event flag matches 1 run execute as @a at @s run playsound slug_arena:world_border master @s ~ ~ ~ 6 1
 execute if score worldborder.event flag matches 1 run worldborder set 69
@@ -34,4 +34,4 @@ execute if score worldborder.event flag matches 1 run execute if score map varia
 execute if score worldborder.event flag matches 1 run execute if score map variable matches 9 run worldborder set 15 60
 
 
-execute if score youretakingtoolong variable matches 5400.. if score worldborder.event flag matches 1 run scoreboard players set worldborder.event flag -1
+execute if score youretakingtoolong variable matches 6000.. if score worldborder.event flag matches 1 run scoreboard players set worldborder.event flag -1
