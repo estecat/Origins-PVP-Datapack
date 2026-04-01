@@ -5,10 +5,10 @@ Scoreboards were split to keep them readable in-game, combining all of it togeth
 ## var-id
 ```
 rand
-@a
+{player}
 ```
 `rand` [ -2147483648 - 2147483647 ] - A clock that acts as an ID for a game.  
-`@a` [ -2147483648 - 2147483647 ] - Player id from the last time they played.
+`{player}` [ -2147483648 - 2147483647 ] - Player id from the last time they played.
 
 ## var-game
 ```
@@ -24,6 +24,17 @@ start-once
 
 reset
 reset.timer
+
+door
+door.sound
+
+youretakingtoolong
+youretakingtoolong-once
+
+worldborder
+worldborder-once
+
+player.count
 ```
 `id` [ -2147483648 - 2147483647 ] - For game sessions, tracking if players belong, if not they get kicked.  
 `mode` [ 0 - 2 ]  
@@ -38,6 +49,14 @@ reset.timer
 `reset` [ 0 - 1 ]  
 `reset.timer` [ 0 - 300 ]
 
+`door` [ 0 - 220 ]
+`door.sound` [ -1 - 1 ]
+
+`youretakingtoolong` [ 0 - 4800 ]  
+`youretakingtoolong` [ 0 - 4800 ]
+
+`count` [ 0 - 4 ]
+
 ## var-blaster
 ```
 north
@@ -50,8 +69,8 @@ south-change
 east-change
 west-change
 ```
-`N, S, E, W` [ 1 - 4 ]
-`N-C, S-C, E-C, W-C` [ -1 - 0 ]
+`N, S, E, W` [ 1 - 4 ] - Page number  
+`N-C, S-C, E-C, W-C` [ -1 - 0 ] - Trigger for change
 
 ## var-ready
 ```
@@ -65,23 +84,14 @@ south-once
 east-once
 west-once
 
+enable
+count
 timer
 ```
 `N, S, E, W` [ -1 - 1 ] - -1 means the player is ignored if non-existant.  
 `N-O, S-O, E-O, W-O` [ -1 - 1 ]  
 `timer` [ 0 - 120 ] - Timer to begin.
 
-## var-player
-```
-north.exist
-south.exist
-east.exist
-west.exist
-
-count
-```
-`N.E, S.E, E.E, W.E` [ 0 - 1 ]  
-`count` [ 0 - 4 ]
 
 ## var-death
 ```
@@ -95,8 +105,8 @@ south-once
 east-once
 west-once
 
-north-west
-south-east
+team-nw
+team-se
 ```
 `N, S, E, W` [ -1 - 4 ]  
 > 0 = Player is alive  

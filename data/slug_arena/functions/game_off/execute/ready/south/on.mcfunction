@@ -1,8 +1,9 @@
 # Counter
-execute unless score ready.south flag matches -1 run scoreboard players set ready.south flag 1
-execute if score ready.south flag matches 1 run scoreboard players add ready.players variable 1
-execute if score ready.south flag matches 1 run tellraw @a {"text": "Yellow is ready!", "color": "yellow"}
-execute if score ready.south flag matches 1 run scoreboard players set ready.south flag -1
+execute unless score south-once var-ready matches -1 run scoreboard players set south-once var-ready 1
+execute if score south-once var-ready matches 1 run scoreboard players add count var-ready 1
+execute if score south-once var-ready matches 1 run tellraw @a {"text": "Yellow is ready!", "color": "yellow"}
+execute if score south-once var-ready matches 1 run playsound slug_arena:ready master @a 312 99 -36
+execute if score south-once var-ready matches 1 run scoreboard players set south-once var-ready -1
 
 # Lights
 title @a[tag=player.south] actionbar {"text":"READY","color":"green"}
@@ -16,8 +17,3 @@ team add south.ready
 team modify south.ready color green
 team join south.ready @a[tag=player.south]
 effect give @a[tag=player.south] minecraft:glowing 1 1 true
-
-# Sound
-execute if score ready.sound.south flag matches 0 run scoreboard players set ready.sound.south flag 1
-execute if score ready.sound.south flag matches 1 run playsound slug_arena:ready master @a 312 99 -36
-execute if score ready.sound.south flag matches 1 run scoreboard players set ready.sound.south flag -1

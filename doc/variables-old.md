@@ -13,7 +13,6 @@ game.reset
 youretakingtoolong
 worldborder
 door
-door.progress
 ```
 
 ## Blaster
@@ -28,8 +27,8 @@ blaster.west
 ```
 player.count
 ready.timer
-ready.east
 ready.players
+ready.east
 ready.north
 ready.south
 ready.west

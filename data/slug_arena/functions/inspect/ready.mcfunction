@@ -1,5 +1,0 @@
-tellraw @a {"text": "\n\n\n\n\n"}
-tellraw @a [{"text": "North: ", "color": "green"}, { "score": { "name": "ready.north", "objective": "variable" }}]
-tellraw @a [{"text": "South: ", "color": "yellow"}, { "score": { "name": "ready.south", "objective": "variable" }}]
-tellraw @a [{"text": "East: ", "color": "red"}, { "score": { "name": "ready.east", "objective": "variable" }}]
-tellraw @a [{"text": "West: ", "color": "blue"}, { "score": { "name": "ready.west", "objective": "variable" }}]

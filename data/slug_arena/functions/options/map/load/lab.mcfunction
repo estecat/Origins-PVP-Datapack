@@ -36,4 +36,4 @@ fillbiome 346 137 -39 278 132 -107 minecraft:plains
 setblock 278 95 -106 redstone_block
 
 # End
-scoreboard players set map variable 3
+scoreboard players set map var-game 3

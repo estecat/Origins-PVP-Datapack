@@ -28,11 +28,11 @@ execute if entity @a[tag=player.east,tag=!loser] run title @a[tag=!player.east] 
 execute if entity @a[tag=player.west,tag=!loser] run title @a[tag=!player.west] title {"text":"Blue Wins!", "color": "blue"}
 
 ## Fireworks
-execute if entity @a[tag=player.north,tag=!loser] run scoreboard players set game.mode.ffa.win.fireworks.north flag 1
-execute if entity @a[tag=player.south,tag=!loser] run scoreboard players set game.mode.ffa.win.fireworks.south flag 1
-execute if entity @a[tag=player.east,tag=!loser] run scoreboard players set game.mode.ffa.win.fireworks.east flag 1
-execute if entity @a[tag=player.west,tag=!loser] run scoreboard players set game.mode.ffa.win.fireworks.west flag 1
-scoreboard players set game.win.fireworks flag 1
+execute if entity @a[tag=player.north,tag=!loser] run scoreboard players set fireworks.ffa var-fireworks 1
+execute if entity @a[tag=player.south,tag=!loser] run scoreboard players set fireworks.ffa var-fireworks 2
+execute if entity @a[tag=player.east,tag=!loser] run scoreboard players set fireworks.ffa var-fireworks 3
+execute if entity @a[tag=player.west,tag=!loser] run scoreboard players set fireworks.ffa var-fireworks 4
+scoreboard players set fireworks-clock var-fireworks 1
 
 ## Reset timer
-scoreboard players set game.reset.timer variable 1
+scoreboard players set reset.timer var-game 1

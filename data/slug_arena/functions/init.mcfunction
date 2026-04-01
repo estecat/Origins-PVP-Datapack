@@ -1,9 +1,14 @@
-scoreboard objectives add variable dummy "Variable"
-scoreboard objectives add flag dummy "Flags"
-scoreboard objectives add pages trigger "Pages"
-scoreboard objectives add team-deaths dummy "Team Deaths"
-scoreboard objectives add options dummy "Options"
 scoreboard objectives add wins dummy "Wins"
-scoreboard objectives add id dummy "Game ID"
+
+scoreboard objectives add var-game dummy
+scoreboard objectives add var-blaster dummy
+scoreboard objectives add var-ready dummy
+scoreboard objectives add var-death dummy
+scoreboard objectives add var-win dummy
+scoreboard objectives add var-fireworks dummy
+scoreboard objectives add var-id dummy
+
+scoreboard objectives add pages trigger
+scoreboard objectives add options trigger
 
 tellraw @a [{"text": "[Slug Arena]", "color": "green"}, {"text": " Datapack reloaded!", "color": "white"}]

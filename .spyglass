@@ -11,10 +11,15 @@
 		]
 	},
 	"scoreboards": [
-		"variable",
-		"bool",
-		"options",
 		"wins",
-		"team-deaths"
+		"var-game",
+		"var-blaster",
+		"var-ready",
+		"var-death",
+		"var-win",
+		"var-fireworks",
+		"var-id",
+		"pages",
+		"options"
 	]
 }

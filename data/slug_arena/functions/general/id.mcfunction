@@ -1,1 +1,1 @@
-scoreboard players add rand id 1
+scoreboard players add rand var-id 1

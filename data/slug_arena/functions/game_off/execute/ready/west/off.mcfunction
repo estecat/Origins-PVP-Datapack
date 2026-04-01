@@ -1,7 +1,7 @@
 # Counter
-execute unless score ready.west flag matches -2 run scoreboard players set ready.west flag 2
-execute if score ready.west flag matches 2 run scoreboard players remove ready.players variable 1
-execute if score ready.west flag matches 2 run scoreboard players set ready.west flag -2
+execute unless score west-once var-ready matches -2 run scoreboard players set west-once var-ready 2
+execute if score west-once var-ready matches 2 run scoreboard players remove count var-ready 1
+execute if score west-once var-ready matches 2 run scoreboard players set west-once var-ready -2
 
 # Lights
 title @a[tag=player.west] actionbar ""
@@ -13,9 +13,6 @@ fill 274 97 -71 275 97 -71 minecraft:shroomlight
 # Glow
 team remove west.ready
 effect clear @a[tag=player.west] minecraft:glowing
-
-# Sound
-scoreboard players set ready.sound.west flag 0
 
 # Title
 title @a[tag=player.west] clear

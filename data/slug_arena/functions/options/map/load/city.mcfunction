@@ -23,4 +23,4 @@ fillbiome 346 126 -39 278 131 -107 minecraft:swamp
 fillbiome 346 137 -39 278 132 -107 minecraft:swamp
 
 # End
-scoreboard players set map variable 8
+scoreboard players set map var-game 8

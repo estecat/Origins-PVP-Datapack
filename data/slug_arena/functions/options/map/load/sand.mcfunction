@@ -23,4 +23,4 @@ fillbiome 346 126 -39 278 131 -107 minecraft:desert
 fillbiome 346 137 -39 278 132 -107 minecraft:desert
 
 # End
-scoreboard players set map variable 6
+scoreboard players set map var-game 6

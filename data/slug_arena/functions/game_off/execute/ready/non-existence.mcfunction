@@ -1,5 +1,5 @@
 # If players don't exist, reset their ready status
-execute unless entity @a[tag=player.north] unless entity @a[tag=player.south] unless entity @a[tag=player.east] unless entity @a[tag=player.west] run scoreboard players set ready.north variable 0
-execute unless entity @a[tag=player.north] unless entity @a[tag=player.south] unless entity @a[tag=player.east] unless entity @a[tag=player.west] run scoreboard players set ready.east variable 0
-execute unless entity @a[tag=player.north] unless entity @a[tag=player.south] unless entity @a[tag=player.east] unless entity @a[tag=player.west] run scoreboard players set ready.south variable 0
-execute unless entity @a[tag=player.north] unless entity @a[tag=player.south] unless entity @a[tag=player.east] unless entity @a[tag=player.west] run scoreboard players set ready.west variable 0
+execute unless entity @a[tag=player.north] unless entity @a[tag=player.south] unless entity @a[tag=player.east] unless entity @a[tag=player.west] run scoreboard players set north var-ready 0
+execute unless entity @a[tag=player.north] unless entity @a[tag=player.south] unless entity @a[tag=player.east] unless entity @a[tag=player.west] run scoreboard players set east var-ready 0
+execute unless entity @a[tag=player.north] unless entity @a[tag=player.south] unless entity @a[tag=player.east] unless entity @a[tag=player.west] run scoreboard players set south var-ready 0
+execute unless entity @a[tag=player.north] unless entity @a[tag=player.south] unless entity @a[tag=player.east] unless entity @a[tag=player.west] run scoreboard players set west var-ready 0

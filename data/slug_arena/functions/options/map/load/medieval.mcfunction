@@ -23,4 +23,4 @@ fillbiome 346 126 -39 278 131 -107 minecraft:plains
 fillbiome 346 137 -39 278 132 -107 minecraft:plains
 
 # End
-scoreboard players set map variable 1
+scoreboard players set map var-game 1

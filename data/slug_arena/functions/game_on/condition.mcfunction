@@ -1,13 +1,18 @@
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/slug-owner-particle
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/door/anim
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/door/particles
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/door/sound
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/door/ticker
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/on-game-start
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/player-death
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/setup-teams
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/too-long
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/worldborder
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/win-conditions/fireworks
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/win-conditions/trigger
-execute if score game.start variable matches 1 run function slug_arena:game_on/execute/player-id
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/on-game-start
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/setup-teams
+
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/player-id
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/player-death
+
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/win-conditions/fireworks
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/win-conditions/trigger
+
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/too-long
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/worldborder
+
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/door/ticker
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/door/anim
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/door/sound
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/door/particles
+
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/slug-owner-particle
