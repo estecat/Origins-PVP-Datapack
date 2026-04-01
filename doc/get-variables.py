@@ -3,7 +3,7 @@ import re
 from rich import print
 
 ptrn_check = re.compile(r'score (\S+) (variable|flag|options) matches')
-ptrn_set = re.compile(r'scoreboard players (add|set|remove) (.+?) (variable|flag|options)')
+ptrn_set = re.compile(r'scoreboard players (add|set|remove|operation) (.+?) (variable|flag|options)')
 
 variable = []
 flag = []
