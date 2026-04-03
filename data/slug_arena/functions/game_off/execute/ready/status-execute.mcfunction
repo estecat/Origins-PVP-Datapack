@@ -23,7 +23,7 @@ execute if entity @a[tag=player.west,x=274,y=98,z=-75,dx=2,dy=2,dz=4] run scoreb
 
 ## ready.{player} = -1
 # Unless player exists : Unless game mode is ffa : Set their ready to -1
-execute unless entity @a[tag=player.north] run scoreboard players set north var-ready -1
-execute unless entity @a[tag=player.south] run scoreboard players set south var-ready -1
-execute unless entity @a[tag=player.east] run scoreboard players set east var-ready -1
-execute unless entity @a[tag=player.west] run scoreboard players set west var-ready -1
+execute unless score mode var-game matches 1 unless entity @a[tag=player.north] run scoreboard players set north var-ready -1
+execute unless score mode var-game matches 1 unless entity @a[tag=player.south] run scoreboard players set south var-ready -1
+execute unless score mode var-game matches 1 unless entity @a[tag=player.east] run scoreboard players set east var-ready -1
+execute unless score mode var-game matches 1 unless entity @a[tag=player.west] run scoreboard players set west var-ready -1
