@@ -1,6 +1,5 @@
 # Counter
 execute unless score west-once var-ready matches -1 run scoreboard players set west-once var-ready 1
-execute if score west-once var-ready matches 1 run scoreboard players add count var-ready 1
 execute if score west-once var-ready matches 1 run tellraw @a {"text": "Blue is ready!", "color": "blue"}
 execute if score west-once var-ready matches 1 run playsound slug_arena:ready master @a 275 99 -73
 execute if score west-once var-ready matches 1 run scoreboard players set west-once var-ready -1

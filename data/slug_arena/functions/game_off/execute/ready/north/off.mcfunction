@@ -1,7 +1,5 @@
 # Counter
-execute unless score north-once var-ready matches -2 run scoreboard players set north-once var-ready 2
-execute if score north-once var-ready matches 2 run scoreboard players remove count var-ready 1
-execute if score north-once var-ready matches 2 run scoreboard players set north-once var-ready -2
+scoreboard players set north-once var-ready 0
 
 # Lights
 title @a[tag=player.north] actionbar ""

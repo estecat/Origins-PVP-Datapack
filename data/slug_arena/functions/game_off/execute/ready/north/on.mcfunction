@@ -1,6 +1,5 @@
 # Counter
 execute unless score north-once var-ready matches -1 run scoreboard players set north-once var-ready 1
-execute if score north-once var-ready matches 1 run scoreboard players add count var-ready 1
 execute if score north-once var-ready matches 1 run tellraw @a {"text": "Green is ready!", "color": "green"}
 execute if score north-once var-ready matches 1 run playsound slug_arena:ready master @a 312 99 -110
 execute if score north-once var-ready matches 1 run scoreboard players set north-once var-ready -1

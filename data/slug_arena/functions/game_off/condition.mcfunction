@@ -1,11 +1,12 @@
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/slug-kill
-execute if score start var-game matches 0 run function slug_arena:game_off/execute/game-start
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/slug-nametag
+execute if score start var-game matches 0 run function slug_arena:game_off/execute/player-id
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/ready/non-existence
+execute if score start var-game matches 0 run function slug_arena:game_off/execute/ready/count
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/ready/status-condition
-execute if score start var-game matches 0 run function slug_arena:game_off/execute/ready/ticker
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/ready/north/condition
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/ready/south/condition
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/ready/east/condition
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/ready/west/condition
-execute if score start var-game matches 0 run function slug_arena:game_off/execute/player-id
+execute if score start var-game matches 0 run function slug_arena:game_off/execute/ready/ticker
+execute if score start var-game matches 0 run function slug_arena:game_off/execute/game-start
