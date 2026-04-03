@@ -9,12 +9,7 @@ execute as @a unless score @s var-id matches 0 run tag @s remove player.west
 execute as @a unless score @s var-id matches 0 run tag @s remove player
 execute as @a unless score @s var-id matches 0 run tag @s remove loser
 
-execute as @a unless score @s var-id matches 0 run team remove north
-execute as @a unless score @s var-id matches 0 run team remove south
-execute as @a unless score @s var-id matches 0 run team remove east
-execute as @a unless score @s var-id matches 0 run team remove west
-execute as @a unless score @s var-id matches 0 run team remove team-nw
-execute as @a unless score @s var-id matches 0 run team remove team-se
+execute as @a unless score @s var-id matches 0 run team leave @s
 
 execute as @a unless score @s var-id matches 0 run clear @s
 execute as @a unless score @s var-id matches 0 run effect clear @s
