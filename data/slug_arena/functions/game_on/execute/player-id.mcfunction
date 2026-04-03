@@ -5,12 +5,7 @@ execute as @a[tag=player] unless score @s var-id = id var-game run tag @s remove
 execute as @a[tag=player] unless score @s var-id = id var-game run tag @s remove player
 execute as @a[tag=player] unless score @s var-id = id var-game run tag @s remove loser
 
-execute as @a[tag=player] unless score @s var-id = id var-game run team remove north
-execute as @a[tag=player] unless score @s var-id = id var-game run team remove south
-execute as @a[tag=player] unless score @s var-id = id var-game run team remove east
-execute as @a[tag=player] unless score @s var-id = id var-game run team remove west
-execute as @a[tag=player] unless score @s var-id = id var-game run team remove team-nw
-execute as @a[tag=player] unless score @s var-id = id var-game run team remove team-se
+execute as @a[tag=player] unless score @s var-id = id var-game run team leave @s
 
 execute as @a[tag=player] unless score @s var-id = id var-game run clear @s
 execute as @a[tag=player] unless score @s var-id = id var-game run effect clear @s
