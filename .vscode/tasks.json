@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Push Local to Server",
+			"type": "shell",
+			"command": "bash ${workspaceFolder}/server.sh"
+		},
+		{
+			"label": "Push Origin to Server",
+			"type": "shell",
+			"command": "bash ${workspaceFolder}/repo.sh"
+		}
+	]
+}
