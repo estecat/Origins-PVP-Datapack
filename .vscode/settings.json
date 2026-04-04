@@ -66,6 +66,14 @@
     {
       "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game_on\\",
       "color": "foldercolorizer.color_33cc33"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\repo.sh\\",
+      "color": "foldercolorizer.color_666666"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\server.sh\\",
+      "color": "foldercolorizer.color_666666"
     }
   ]
 }
