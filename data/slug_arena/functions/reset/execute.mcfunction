@@ -102,7 +102,7 @@ setblock 353 110 -63 air
 schedule function slug_arena:reset/schedules/dropper 4
 
 # Blasters
-scoreboard players set page.change.west flag 0
-scoreboard players set page.change.east flag 0
-scoreboard players set page.change.north flag 0
-scoreboard players set page.change.south flag 0
+scoreboard players set west-change var-blaster 0
+scoreboard players set east-change var-blaster 0
+scoreboard players set north-change var-blaster 0
+scoreboard players set south-change var-blaster 0
