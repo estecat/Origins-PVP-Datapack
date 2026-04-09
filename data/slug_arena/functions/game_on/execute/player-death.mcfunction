@@ -78,6 +78,35 @@ execute if score south var-death matches 1 unless score player.count var-game ma
 execute if score east var-death matches 1 unless score player.count var-game matches ..1 run tag @a[tag=player.east] add loser
 execute if score west var-death matches 1 unless score player.count var-game matches ..1 run tag @a[tag=player.west] add loser
 
+## Kill slugs
+execute if score north var-death matches 1 as @e[name=Green, type=#slugterra:slug] run tp @s 0 0 0
+execute if score north var-death matches 1 as @e[name=Green, type=#slugterra:velocimorph] run tp @s 0 0 0
+execute if score north var-death matches 1 as @e[name=Green, type=#slugterra:velocimorphabilityentity] run tp @s 0 0 0
+execute if score north var-death matches 1 run kill @e[name=Green, type=#slugterra:slug]
+execute if score north var-death matches 1 run kill @e[name=Green, type=#slugterra:velocimorph]
+execute if score north var-death matches 1 run kill @e[name=Green, type=#slugterra:velocimorphabilityentity]
+
+execute if score south var-death matches 1 as @e[name=Yellow, type=#slugterra:slug] run tp @s 0 0 0
+execute if score south var-death matches 1 as @e[name=Yellow, type=#slugterra:velocimorph] run tp @s 0 0 0
+execute if score south var-death matches 1 as @e[name=Yellow, type=#slugterra:velocimorphabilityentity] run tp @s 0 0 0
+execute if score south var-death matches 1 run kill @e[name=Yellow, type=#slugterra:slug]
+execute if score south var-death matches 1 run kill @e[name=Yellow, type=#slugterra:velocimorph]
+execute if score south var-death matches 1 run kill @e[name=Yellow, type=#slugterra:velocimorphabilityentity]
+
+execute if score east var-death matches 1 as @e[name=Red, type=#slugterra:slug] run tp @s 0 0 0
+execute if score east var-death matches 1 as @e[name=Red, type=#slugterra:velocimorph] run tp @s 0 0 0
+execute if score east var-death matches 1 as @e[name=Red, type=#slugterra:velocimorphabilityentity] run tp @s 0 0 0
+execute if score east var-death matches 1 run kill @e[name=Red, type=#slugterra:slug]
+execute if score east var-death matches 1 run kill @e[name=Red, type=#slugterra:velocimorph]
+execute if score east var-death matches 1 run kill @e[name=Red, type=#slugterra:velocimorphabilityentity]
+
+execute if score west var-death matches 1 as @e[name=Blue, type=#slugterra:slug] run tp @s 0 0 0
+execute if score west var-death matches 1 as @e[name=Blue, type=#slugterra:velocimorph] run tp @s 0 0 0
+execute if score west var-death matches 1 as @e[name=Blue, type=#slugterra:velocimorphabilityentity] run tp @s 0 0 0
+execute if score west var-death matches 1 run kill @e[name=Blue, type=#slugterra:slug]
+execute if score west var-death matches 1 run kill @e[name=Blue, type=#slugterra:velocimorph]
+execute if score west var-death matches 1 run kill @e[name=Blue, type=#slugterra:velocimorphabilityentity]
+
 ## Score
 # FFA
 execute if score north var-death matches 1 unless score player.count var-game matches ..1 run scoreboard players remove player.count var-game 1
