@@ -1,15 +1,15 @@
 # Opening
-execute unless score door var-game matches 0 unless score door var-game matches 130..190 run particle ash 313.0 105.0 -106.6 2 0 0.1 0 7
-execute unless score door var-game matches 0 unless score door var-game matches 130..190 run particle ash 313.0 104.8 -108.4 2 0 0.1 0 7
+execute unless score door var-game matches 0 unless score door var-game matches 130..190 unless score door var-game matches 220 run particle ash 313.0 105.0 -106.6 2 0 0.1 0 7
+execute unless score door var-game matches 0 unless score door var-game matches 130..190 unless score door var-game matches 220 run particle ash 313.0 104.8 -108.4 2 0 0.1 0 7
 
-execute unless score door var-game matches 0 unless score door var-game matches 130..190 run particle ash 313.0 105.0 -36.6 2 0 0.1 0 7
-execute unless score door var-game matches 0 unless score door var-game matches 130..190 run particle ash 313.0 104.8 -38.1 2 0 0.1 0 7
+execute unless score door var-game matches 0 unless score door var-game matches 130..190 unless score door var-game matches 220 run particle ash 313.0 105.0 -36.6 2 0 0.1 0 7
+execute unless score door var-game matches 0 unless score door var-game matches 130..190 unless score door var-game matches 220 run particle ash 313.0 104.8 -38.1 2 0 0.1 0 7
 
-execute unless score door var-game matches 0 unless score door var-game matches 130..190 run particle ash 348.4 105.0 -73.0 0.1 0 2 0 7
-execute unless score door var-game matches 0 unless score door var-game matches 130..190 run particle ash 346.9 104.8 -73.0 0.1 0 2 0 7
+execute unless score door var-game matches 0 unless score door var-game matches 130..190 unless score door var-game matches 220 run particle ash 348.4 105.0 -73.0 0.1 0 2 0 7
+execute unless score door var-game matches 0 unless score door var-game matches 130..190 unless score door var-game matches 220 run particle ash 346.9 104.8 -73.0 0.1 0 2 0 7
 
-execute unless score door var-game matches 0 unless score door var-game matches 130..190 run particle ash 276.6 105.0 -73.0 0.1 0 2 0 7
-execute unless score door var-game matches 0 unless score door var-game matches 130..190 run particle ash 278.1 104.8 -73.0 0.1 0 2 0 7
+execute unless score door var-game matches 0 unless score door var-game matches 130..190 unless score door var-game matches 220 run particle ash 276.6 105.0 -73.0 0.1 0 2 0 7
+execute unless score door var-game matches 0 unless score door var-game matches 130..190 unless score door var-game matches 220 run particle ash 278.1 104.8 -73.0 0.1 0 2 0 7
 
 # Closed shut
 execute if score door var-game matches 219 run particle smoke 313.0 99.0 -106.6 2 0 0.1 0.05 500
