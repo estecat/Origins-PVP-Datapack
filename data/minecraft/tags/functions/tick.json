@@ -11,6 +11,7 @@
     "slug_arena:general/id",
     "slug_arena:general/lobby",
     "slug_arena:general/player-taken",
-    "slug_arena:general/players-away"
+    "slug_arena:general/players-away",
+    "slug_arena:general/punch-reset"
   ]
 }

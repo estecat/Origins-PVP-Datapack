@@ -1,0 +1,1 @@
+execute as @a unless score @s var-punch matches 0 run scoreboard players set @s var-punch 0
