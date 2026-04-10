@@ -11,3 +11,4 @@ execute if score start var-game matches 0 run function slug_arena:game_off/execu
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/ready/ticker
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/game-start
 execute if score start var-game matches 0 run function slug_arena:game_off/execute/door
+execute if score start var-game matches 0 run function slug_arena:game_off/execute/player-tubes/condition
