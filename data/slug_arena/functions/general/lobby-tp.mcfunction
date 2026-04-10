@@ -1,0 +1,2 @@
+execute positioned 262 23 -332 as @a[dx=100,dy=0,dz=100,gamemode=adventure] run tp @s 312 35 -297
+execute positioned 262 23 -332 as @a[dx=100,dy=0,dz=100,gamemode=adventure] run effect give @s minecraft:regeneration 3 200 true
