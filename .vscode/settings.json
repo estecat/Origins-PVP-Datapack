@@ -74,6 +74,21 @@
     {
       "folderPath": "Origins-PVP-Datapack\\server.sh\\",
       "color": "foldercolorizer.color_666666"
-    }
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game_off\\execute\\ready\\east\\"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game_off\\execute\\player-tubes\\north.mcfunction\\",
+      "color": "foldercolorizer.color_009933"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game_off\\execute\\player-tubes\\south.mcfunction\\",
+      "color": "foldercolorizer.color_cccc33"
+    },
+    {
+      "folderPath": "Origins-PVP-Datapack\\data\\slug_arena\\functions\\game_off\\execute\\player-tubes\\west.mcfunction\\",
+      "color": "foldercolorizer.color_3366cc"
+    },
   ]
 }
