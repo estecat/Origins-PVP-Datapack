@@ -9,7 +9,7 @@
     "slug_arena:blasters/trigger",
     "slug_arena:blasters/blaster-pages",
     "slug_arena:general/id",
-    "slug_arena:general/lobby",
+    "slug_arena:general/lobby-blocks",
     "slug_arena:general/player-taken",
     "slug_arena:general/players-away",
     "slug_arena:general/punch-reset"
