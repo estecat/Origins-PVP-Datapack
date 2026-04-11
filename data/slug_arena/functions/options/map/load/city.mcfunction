@@ -24,3 +24,4 @@ fillbiome 346 137 -39 278 132 -107 minecraft:swamp
 
 # End
 scoreboard players set map var-game 8
+data modify storage slug_arena:settings map set value "§7Sewer City"

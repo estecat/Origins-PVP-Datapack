@@ -24,3 +24,4 @@ fillbiome 346 137 -39 278 132 -107 minecraft:plains
 
 # End
 scoreboard players set map var-game 1
+data modify storage slug_arena:settings map set value "§2Medieval Siege"

@@ -33,3 +33,4 @@ summon marker 327 95.0 -67 {Tags:["kowloon.vent"],data:{name:"kowloon.vent.6"}}
 
 # End
 scoreboard players set map var-game 7
+data modify storage slug_arena:settings map set value "§4Kowloon"

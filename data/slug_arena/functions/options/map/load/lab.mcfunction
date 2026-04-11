@@ -37,3 +37,4 @@ setblock 278 95 -106 redstone_block
 
 # End
 scoreboard players set map var-game 3
+data modify storage slug_arena:settings map set value "§bThe Lab"

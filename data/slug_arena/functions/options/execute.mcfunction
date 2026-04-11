@@ -13,26 +13,33 @@ execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 3 run 
 # Time
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 4 run time set day
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 4 run tellraw @a {"text": "Set time to day!", "color": "yellow"}
+execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 4 run data modify storage slug_arena:settings time set value "Day"
 
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 5 run time set noon
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 5 run tellraw @a {"text": "Set time to noon!", "color": "yellow"}
+execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 5 run data modify storage slug_arena:settings time set value "Noon"
 
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 6 run time set night
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 6 run tellraw @a {"text": "Set time to night!", "color": "yellow"}
+execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 6 run data modify storage slug_arena:settings time set value "Night"
 
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 7 run time set midnight
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 7 run tellraw @a {"text": "Set time to midnight!", "color": "yellow"}
+execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 7 run data modify storage slug_arena:settings time set value "Midnight"
 
 
 # Weather
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 8 run weather clear
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 8 run tellraw @a {"text": "Cleared the weather!", "color": "yellow"}
+execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 8 run data modify storage slug_arena:settings weather set value "Clear"
 
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 9 run weather rain
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 9 run tellraw @a {"text": "Set weather to rain!", "color": "yellow"}
+execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 9 run data modify storage slug_arena:settings weather set value "Rain"
 
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 10 run weather thunder
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 10 run tellraw @a {"text": "Set weather to thunder!", "color": "yellow"}
+execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 10 run data modify storage slug_arena:settings weather set value "Thunder"
 
 # Maps
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 11 run scoreboard players set set-map var-game 1

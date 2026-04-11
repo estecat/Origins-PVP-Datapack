@@ -24,3 +24,4 @@ fillbiome 346 137 -39 278 132 -107 minecraft:snowy_taiga
 
 # End
 scoreboard players set map var-game 9
+data modify storage slug_arena:settings map set value "§bFrozen Lake"
