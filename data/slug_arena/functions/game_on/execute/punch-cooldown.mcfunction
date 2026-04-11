@@ -1,5 +1,5 @@
 execute as @a[tag=player] unless score @s var-punch matches 0 run scoreboard players set @s var-punch-timer 100
-execute as @a[tag=player] unless score @s var-punch matches 0 run attribute lazynor_cat minecraft:generic.attack_damage base set 0
+execute as @a[tag=player] unless score @s var-punch matches 0 run attribute @s minecraft:generic.attack_damage base set 0
 execute as @a[tag=player] unless score @s var-punch matches 0 run scoreboard players set @s var-punch 0
 
 execute as @a[tag=player] if score @s var-punch-timer matches 1.. run title @s actionbar "§c[█░░░░]"
