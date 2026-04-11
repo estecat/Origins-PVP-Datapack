@@ -9,6 +9,7 @@ scoreboard objectives add var-fireworks dummy
 scoreboard objectives add var-id dummy
 scoreboard objectives add var-punch minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add var-punch-timer dummy
+scoreboard objectives add var-kowloon dummy
 
 scoreboard objectives add pages trigger
 scoreboard objectives add options trigger
