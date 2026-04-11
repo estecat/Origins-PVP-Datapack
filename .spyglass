@@ -19,6 +19,8 @@
 		"var-win",
 		"var-fireworks",
 		"var-id",
+		"var-punch",
+		"var-punch-timer",
 		"pages",
 		"options"
 	]
