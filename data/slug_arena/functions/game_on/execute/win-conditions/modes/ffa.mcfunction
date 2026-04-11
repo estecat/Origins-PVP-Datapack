@@ -16,10 +16,10 @@ execute if entity @a[tag=player.west,tag=!loser] as @a[tag=player.west] run xp a
 
 ## Message
 # For the winning player
-execute if entity @a[tag=player.north,tag=!loser] as @a[tag=player.north] run title @s title {"text":"You Win!", "color": "green"}
-execute if entity @a[tag=player.south,tag=!loser] as @a[tag=player.south] run title @s title {"text":"You Win!", "color": "yellow"}
-execute if entity @a[tag=player.east,tag=!loser] as @a[tag=player.east] run title @s title {"text":"You Win!", "color": "red"}
-execute if entity @a[tag=player.west,tag=!loser] as @a[tag=player.west] run title @s title {"text":"You Win!", "color": "blue"}
+execute if entity @a[tag=player.north,tag=!loser] as @a[tag=player.north] run title @s title {"text":"Victory!", "color": "green"}
+execute if entity @a[tag=player.south,tag=!loser] as @a[tag=player.south] run title @s title {"text":"Victory!", "color": "yellow"}
+execute if entity @a[tag=player.east,tag=!loser] as @a[tag=player.east] run title @s title {"text":"Victory!", "color": "red"}
+execute if entity @a[tag=player.west,tag=!loser] as @a[tag=player.west] run title @s title {"text":"Victory!", "color": "blue"}
 
 # Everyone else
 execute if entity @a[tag=player.north,tag=!loser] run title @a[tag=!player.north] title {"text":"Green Wins!", "color": "green"}
