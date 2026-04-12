@@ -16,6 +16,7 @@ execute if score set-map var-game matches -1 run tellraw @a [{"text": "Map clear
 execute unless score set-map var-game matches 0 run kill @e[type=#minecraft:arrows]
 execute unless score set-map var-game matches 0 run kill @e[type=marker,tag=kowloon.vent]
 execute unless score set-map var-game matches 0 run kill @e[type=marker,tag=lab.pad]
+execute unless score set-map var-game matches 0 run kill @e[type=marker,tag=lab.jump]
 
 # Maps
 execute if score set-map var-game matches 1 run function slug_arena:options/map/load/medieval
