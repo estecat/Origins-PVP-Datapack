@@ -35,6 +35,24 @@ fillbiome 346 137 -39 278 132 -107 minecraft:plains
 
 setblock 278 95 -106 redstone_block
 
+summon marker 312 93.0 -73 {Tags:["lab.jump"],data:{name:"lab.jump"}}
+
+summon marker 298 99.0 -102 {Tags:["lab.pad", "lab.pad.north"],data:{name:"lab.pad.north"}}
+summon marker 326 99.0 -102 {Tags:["lab.pad", "lab.pad.north"],data:{name:"lab.pad.north"}}
+summon marker 312 100.0 -81 {Tags:["lab.pad", "lab.pad.north.back"],data:{name:"lab.pad.north.back"}}
+
+summon marker 326 99.0 -44 {Tags:["lab.pad", "lab.pad.south"],data:{name:"lab.pad.south"}}
+summon marker 298 99.0 -44 {Tags:["lab.pad", "lab.pad.south"],data:{name:"lab.pad.south"}}
+summon marker 312 100.0 -65 {Tags:["lab.pad", "lab.pad.south.back"],data:{name:"lab.pad.south.back"}}
+
+summon marker 341 99.0 -87 {Tags:["lab.pad", "lab.pad.east"],data:{name:"lab.pad.east"}}
+summon marker 341 99.0 -59 {Tags:["lab.pad", "lab.pad.east"],data:{name:"lab.pad.east"}}
+summon marker 320 100.0 -73 {Tags:["lab.pad", "lab.pad.east.back"],data:{name:"lab.pad.east.back"}}
+
+summon marker 283 99.0 -59 {Tags:["lab.pad", "lab.pad.west"],data:{name:"lab.pad.west"}}
+summon marker 283 99.0 -87 {Tags:["lab.pad", "lab.pad.west"],data:{name:"lab.pad.west"}}
+summon marker 304 100.0 -73 {Tags:["lab.pad", "lab.pad.west.back"],data:{name:"lab.pad.west.back"}}
+
 # End
 scoreboard players set map var-game 3
 data modify storage slug_arena:settings map set value "§bThe Lab"
