@@ -1,7 +1,7 @@
 execute as @a unless score @s var-lab matches ..0 run scoreboard players remove @s var-lab 1
 execute as @e[type=marker,tag=lab.pad] at @s positioned ~-1 ~ ~-1 as @a[dx=1,dz=1] run scoreboard players set @s var-lab 10
 
-execute as @e[type=marker,tag=lab.pad] at @s positioned ~-1 ~ ~-1 as @a[dx=1,dz=1] if score @s var-lab matches 10 run playsound slug_arena:snow_ball_launcher master @a ~ ~ ~ 3
+execute as @e[type=marker,tag=lab.pad] at @s positioned ~-1 ~ ~-1 as @a[dx=1,dz=1] if score @s var-lab matches 10 run playsound slug_arena:snow_ball_launcher master @a ~1 ~ ~1 3
 
 execute as @e[type=marker,tag=lab.pad.north] at @s positioned ~-1 ~ ~-1 as @a[dx=1,dz=1] if score @s var-lab matches 10 run summon minecraft:snowball ~1 ~1.5 ~1 {Motion:[0d,-0.22,1.57]}
 execute as @e[type=marker,tag=lab.pad.south] at @s positioned ~-1 ~ ~-1 as @a[dx=1,dz=1] if score @s var-lab matches 10 run summon minecraft:snowball ~1 ~1.5 ~1 {Motion:[0d,-0.22,-1.57]}
