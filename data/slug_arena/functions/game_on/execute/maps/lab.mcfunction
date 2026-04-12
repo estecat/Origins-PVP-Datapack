@@ -18,6 +18,7 @@ execute as @e[type=marker,tag=lab.pad] at @s positioned ~-1 ~ ~-1 as @a[dx=1,dz=
 
 
 execute as @e[type=marker,tag=lab.jump] at @s positioned ~-1 ~ ~-1 as @a[dx=1,dz=1] if score @s var-lab matches ..0 run data modify entity @s Motion[1] set value 1.5
+execute as @e[type=marker,tag=lab.jump] at @s positioned ~-1 ~ ~-1 as @a[dx=1,dz=1] if score @s var-lab matches ..0 run playsound slug_arena:snow_ball_launcher master @a ~1 ~ ~1 3 0.5
 execute as @e[type=marker,tag=lab.jump] at @s positioned ~-1 ~ ~-1 as @a[dx=1,dz=1] if score @s var-lab matches ..0 run scoreboard players set @s var-lab 65
 
 execute as @a[tag=player] unless score @s var-lab matches 0 run data modify entity @s FallDistance set value 0
