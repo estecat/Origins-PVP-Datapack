@@ -22,13 +22,18 @@ fillbiome 346 120 -39 278 125 -107 minecraft:plains
 fillbiome 346 126 -39 278 131 -107 minecraft:plains
 fillbiome 346 137 -39 278 132 -107 minecraft:plains
 
-summon marker 288 95.0 -73 {Tags:["kowloon.vent"],data:{name:"kowloon.vent.1"}}
-summon marker 297 95.0 -79 {Tags:["kowloon.vent"],data:{name:"kowloon.vent.2"}}
-summon marker 297 95.0 -67 {Tags:["kowloon.vent"],data:{name:"kowloon.vent.3"}}
+summon marker 288 95.0 -73 {Tags:["kowloon.condenser"],data:{name:"kowloon.condenser"}}
+summon marker 297 95.0 -79 {Tags:["kowloon.condenser"],data:{name:"kowloon.condenser"}}
+summon marker 297 95.0 -67 {Tags:["kowloon.condenser"],data:{name:"kowloon.condenser"}}
 
-summon marker 336 95.0 -73 {Tags:["kowloon.vent"],data:{name:"kowloon.vent.4"}}
-summon marker 327 95.0 -79 {Tags:["kowloon.vent"],data:{name:"kowloon.vent.5"}}
-summon marker 327 95.0 -67 {Tags:["kowloon.vent"],data:{name:"kowloon.vent.6"}}
+summon marker 336 95.0 -73 {Tags:["kowloon.condenser"],data:{name:"kowloon.condenser"}}
+summon marker 327 95.0 -79 {Tags:["kowloon.condenser"],data:{name:"kowloon.condenser"}}
+summon marker 327 95.0 -67 {Tags:["kowloon.condenser"],data:{name:"kowloon.condenser"}}
+
+summon marker 295.0 87.0 -96 {Tags:["kowloon.tube","kowloon.tube.west"],data:{name:"kowloon.tube"}}
+summon marker 295.0 87.0 -50 {Tags:["kowloon.tube","kowloon.tube.west"],data:{name:"kowloon.tube"}}
+summon marker 330.0 87.0 -96 {Tags:["kowloon.tube","kowloon.tube.east"],data:{name:"kowloon.tube"}}
+summon marker 330.0 87.0 -50 {Tags:["kowloon.tube","kowloon.tube.east"],data:{name:"kowloon.tube"}}
 
 
 # End
