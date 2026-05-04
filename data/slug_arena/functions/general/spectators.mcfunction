@@ -1,0 +1,1 @@
+execute as @a[gamemode=spectator] run effect clear @s

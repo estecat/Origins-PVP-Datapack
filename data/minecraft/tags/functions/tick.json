@@ -13,6 +13,8 @@
     "slug_arena:general/lobby-tp",
     "slug_arena:general/player-taken",
     "slug_arena:general/players-away",
-    "slug_arena:general/punch-reset"
+    "slug_arena:general/punch-reset",
+    "slug_arena:general/spectators",
+    "slug_arena:general/item-owner"
   ]
 }
