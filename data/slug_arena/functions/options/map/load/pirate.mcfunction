@@ -25,6 +25,11 @@ fillbiome 346 120 -39 278 125 -107 minecraft:plains
 fillbiome 346 126 -39 278 131 -107 minecraft:plains
 fillbiome 346 137 -39 278 132 -107 minecraft:plains
 
+summon marker 312 101 -82 {Tags:["pirate.cannon-north"],data:{name:"pirate.cannon-north"}}
+summon marker 312 101 -64 {Tags:["pirate.cannon-south"],data:{name:"pirate.cannon-south"}}
+summon marker 321 101 -73 {Tags:["pirate.cannon-east"],data:{name:"pirate.cannon-east"}}
+summon marker 303 101 -73 {Tags:["pirate.cannon-west"],data:{name:"pirate.cannon-west"}}
+
 # End
 scoreboard players set map var-game 4
 data modify storage slug_arena:settings map set value "§5Legacy"
