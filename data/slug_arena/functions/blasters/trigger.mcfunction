@@ -15,16 +15,16 @@ execute as @a[tag=player.west] if score @s pages matches 2 unless score west-cho
 
 ## Boundary
 # Maximum
-execute if score north var-blaster matches ..0 run scoreboard players set north var-blaster 4
-execute if score south var-blaster matches ..0 run scoreboard players set south var-blaster 4
-execute if score east var-blaster matches ..0 run scoreboard players set east var-blaster 4
-execute if score west var-blaster matches ..0 run scoreboard players set west var-blaster 4
+execute if score north var-blaster matches ..0 unless score north-chose var-blaster matches 1 run scoreboard players set north var-blaster 4
+execute if score south var-blaster matches ..0 unless score south-chose var-blaster matches 1 run scoreboard players set south var-blaster 4
+execute if score east var-blaster matches ..0 unless score east-chose var-blaster matches 1 run scoreboard players set east var-blaster 4
+execute if score west var-blaster matches ..0 unless score west-chose var-blaster matches 1 run scoreboard players set west var-blaster 4
 
 # Minimum
-execute if score north var-blaster matches 5.. run scoreboard players set north var-blaster 1
-execute if score south var-blaster matches 5.. run scoreboard players set south var-blaster 1
-execute if score east var-blaster matches 5.. run scoreboard players set east var-blaster 1
-execute if score west var-blaster matches 5.. run scoreboard players set west var-blaster 1
+execute if score north var-blaster matches 5.. unless score north-chose var-blaster matches 1 run scoreboard players set north var-blaster 1
+execute if score south var-blaster matches 5.. unless score south-chose var-blaster matches 1 run scoreboard players set south var-blaster 1
+execute if score east var-blaster matches 5.. unless score east-chose var-blaster matches 1 run scoreboard players set east var-blaster 1
+execute if score west var-blaster matches 5.. unless score west-chose var-blaster matches 1 run scoreboard players set west var-blaster 1
 
 
 
