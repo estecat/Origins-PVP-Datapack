@@ -21,10 +21,15 @@ scoreboard players set worldborder-once var-game 0
 scoreboard players set player.count var-game 4
 
 # var-blaster
-scoreboard players set west-change var-blaster 0
-scoreboard players set east-change var-blaster 0
-scoreboard players set north-change var-blaster 0
-scoreboard players set south-change var-blaster 0
+scoreboard players set north-chose var-blaster 0
+scoreboard players set south-chose var-blaster 0
+scoreboard players set east-chose var-blaster 0
+scoreboard players set west-chose var-blaster 0
+
+scoreboard players set west-refresh var-blaster 1
+scoreboard players set east-refresh var-blaster 1
+scoreboard players set north-refresh var-blaster 1
+scoreboard players set south-refresh var-blaster 1
 
 # var-ready
 scoreboard players set count var-ready 0
