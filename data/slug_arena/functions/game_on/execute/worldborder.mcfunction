@@ -27,7 +27,7 @@ execute if score worldborder-once var-game matches 1 run execute if score map va
 # Sand
 execute if score worldborder-once var-game matches 1 run execute if score map var-game matches 6 run worldborder set 21 50
 # Kowloon
-execute if score worldborder-once var-game matches 1 run execute if score map var-game matches 7 run worldborder set 29 50
+execute if score worldborder-once var-game matches 1 run execute if score map var-game matches 7 run worldborder set 27 50
 # City
 execute if score worldborder-once var-game matches 1 run execute if score map var-game matches 8 run worldborder set 13 60
 # Frozen
