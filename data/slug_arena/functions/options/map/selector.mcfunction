@@ -47,6 +47,9 @@ execute if score set-map var-game matches 8 run tellraw @a [{"text": "Selected: 
 execute if score set-map var-game matches 9 run function slug_arena:options/map/load/frozen
 execute if score set-map var-game matches 9 run tellraw @a [{"text": "Selected: ", "color": "yellow"}, {"text": "Frozen Lake", "color": "aqua", "bold": true}]
 
+execute if score set-map var-game matches 10 run function slug_arena:options/map/load/pirate
+execute if score set-map var-game matches 10 run tellraw @a [{"text": "Selected: ", "color": "yellow"}, {"text": "Pirate (Placeholder)", "color": "aqua", "bold": true}]
+
 # End
 execute unless score set-map var-game matches 0 as @a at @s run playsound minecraft:block.large_amethyst_bud.place record @s ~ ~ ~
 execute unless score set-map var-game matches 0 run scoreboard players set set-map var-game 0
