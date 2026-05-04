@@ -1,13 +1,13 @@
 ## Tagging
-execute at @e[type=marker,tag=pirate.cannon-north] as @a[distance=..1] unless entity @a[tag=in-cannon.north] run tag @s add in-cannon.north
-execute at @e[type=marker,tag=pirate.cannon-south] as @a[distance=..1] unless entity @a[tag=in-cannon.south] run tag @s add in-cannon.south
-execute at @e[type=marker,tag=pirate.cannon-east] as @a[distance=..1] unless entity @a[tag=in-cannon.east] run tag @s add in-cannon.east
-execute at @e[type=marker,tag=pirate.cannon-west] as @a[distance=..1] unless entity @a[tag=in-cannon.west] run tag @s add in-cannon.west
+execute at @e[type=marker,tag=pirate.cannon-north] as @a[tag=player,distance=..1] unless entity @a[tag=in-cannon.north] run tag @s add in-cannon.north
+execute at @e[type=marker,tag=pirate.cannon-south] as @a[tag=player,distance=..1] unless entity @a[tag=in-cannon.south] run tag @s add in-cannon.south
+execute at @e[type=marker,tag=pirate.cannon-east] as @a[tag=player,distance=..1] unless entity @a[tag=in-cannon.east] run tag @s add in-cannon.east
+execute at @e[type=marker,tag=pirate.cannon-west] as @a[tag=player,distance=..1] unless entity @a[tag=in-cannon.west] run tag @s add in-cannon.west
 
-execute at @e[type=marker,tag=pirate.cannon-north] unless entity @a[distance=..1] unless score north-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.north
-execute at @e[type=marker,tag=pirate.cannon-south] unless entity @a[distance=..1] unless score south-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.south
-execute at @e[type=marker,tag=pirate.cannon-east] unless entity @a[distance=..1] unless score east-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.east
-execute at @e[type=marker,tag=pirate.cannon-west] unless entity @a[distance=..1] unless score west-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.west
+execute at @e[type=marker,tag=pirate.cannon-north] unless entity @a[tag=player,distance=..1] unless score north-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.north
+execute at @e[type=marker,tag=pirate.cannon-south] unless entity @a[tag=player,distance=..1] unless score south-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.south
+execute at @e[type=marker,tag=pirate.cannon-east] unless entity @a[tag=player,distance=..1] unless score east-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.east
+execute at @e[type=marker,tag=pirate.cannon-west] unless entity @a[tag=player,distance=..1] unless score west-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.west
 
 
 ## Reset scores
