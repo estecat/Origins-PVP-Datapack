@@ -1,0 +1,1 @@
+execute as @e[type=item] run data modify entity @s Owner set from entity @s Thrower
