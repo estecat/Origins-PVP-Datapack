@@ -64,13 +64,19 @@ south
 east
 west
 
-north-change
-south-change
-east-change
-west-change
+north-refresh
+south-refresh
+east-refresh
+west-refresh
+
+north-chose
+south-chose
+east-chose
+west-chose
 ```
 `N, S, E, W` [ 1 - 4 ] - Page number  
-`N-C, S-C, E-C, W-C` [ -1 - 0 ] - Trigger for change
+`N-R, S-R, E-R, W-R` [ -1 - 0 ] - Trigger for change
+`N-C, S-C, E-C, W-C` [ 0 - 1 ] - Locks the pages so that it can't be turned
 
 ## var-ready
 ```
