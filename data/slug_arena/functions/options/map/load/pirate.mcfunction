@@ -35,6 +35,11 @@ summon slugterra:mutated_shark 293 95 -73
 summon slugterra:mutated_shark 312 95 -92
 summon slugterra:mutated_shark 312 95 -54
 
+setblock 331 102 -42 slugterra:dojang_door[facing=north]
+setblock 293 102 -104 slugterra:dojang_door[facing=south]
+setblock 281 102 -92 slugterra:dojang_door[facing=east]
+setblock 343 102 -54 slugterra:dojang_door[facing=west]
+
 # End
 scoreboard players set map var-game 4
 data modify storage slug_arena:settings map set value "§5Legacy"
