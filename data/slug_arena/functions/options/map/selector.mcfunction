@@ -58,7 +58,7 @@ execute if score set-map var-game matches 9 run function slug_arena:options/map/
 execute if score set-map var-game matches 9 run tellraw @a [{"text": "Selected: ", "color": "yellow"}, {"text": "Frozen Lake", "color": "aqua", "bold": true}]
 
 execute if score set-map var-game matches 10 run function slug_arena:options/map/load/pirate
-execute if score set-map var-game matches 10 run tellraw @a [{"text": "Selected: ", "color": "yellow"}, {"text": "Pirate (Placeholder)", "color": "aqua", "bold": true}]
+execute if score set-map var-game matches 10 run tellraw @a [{"text": "Selected: ", "color": "yellow"}, {"text": "Slinger's Bounty", "color": "aqua", "bold": true}]
 
 
 # End

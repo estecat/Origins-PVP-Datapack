@@ -37,4 +37,4 @@ setblock 343 102 -54 slugterra:dojang_door[facing=west]
 
 # End
 scoreboard players set map var-game 4
-data modify storage slug_arena:settings map set value "§bSlingers Bounty"
+data modify storage slug_arena:settings map set value "§bSlinger's Bounty"
