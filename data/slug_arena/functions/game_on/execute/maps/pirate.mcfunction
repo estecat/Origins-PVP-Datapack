@@ -48,10 +48,10 @@ execute if score east-fuse var-pirate matches 60 as @a[tag=in-cannon.east] run t
 execute if score west-fuse var-pirate matches 60 as @a[tag=in-cannon.west] run tp @s 299 101.5 -73 90 0
 
 
-execute if score north-fuse var-pirate matches 62 run playsound entity.generic.explode master @a 312 101.5 -86 1 1 0
-execute if score south-fuse var-pirate matches 62 run playsound entity.generic.explode master @a 312 101.5 -60 1 1 0
-execute if score east-fuse var-pirate matches 62 run playsound entity.generic.explode master @a 325 101.5 -73 1 1 0
-execute if score west-fuse var-pirate matches 62 run playsound entity.generic.explode master @a 299 101.5 -73 1 1 0
+execute if score north-fuse var-pirate matches 62 run playsound entity.generic.explode master @a 312 101.5 -86 3 1 0
+execute if score south-fuse var-pirate matches 62 run playsound entity.generic.explode master @a 312 101.5 -60 3 1 0
+execute if score east-fuse var-pirate matches 62 run playsound entity.generic.explode master @a 325 101.5 -73 3 1 0
+execute if score west-fuse var-pirate matches 62 run playsound entity.generic.explode master @a 299 101.5 -73 3 1 0
 
 execute if score north-fuse var-pirate matches 62 as @a[tag=in-cannon.north] run data modify entity @s Motion[1] set value 0.9d
 execute if score south-fuse var-pirate matches 62 as @a[tag=in-cannon.south] run data modify entity @s Motion[1] set value 0.9d
