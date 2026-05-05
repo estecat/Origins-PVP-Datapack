@@ -1,5 +1,3 @@
-kill @e[type=minecraft:end_crystal]
-
 # Clear
 fill 278 85 -107 346 90 -39 air
 fill 278 91 -107 346 96 -39 air

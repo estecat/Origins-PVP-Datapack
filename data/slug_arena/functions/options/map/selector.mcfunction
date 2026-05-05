@@ -13,6 +13,7 @@ execute unless score set-map var-game matches 0 unless score set-map var-game ma
 execute if score set-map var-game matches -1 run function slug_arena:options/map/load/clear
 execute if score set-map var-game matches -1 run tellraw @a [{"text": "Map cleared!", "color": "yellow"}]
 
+execute unless score set-map var-game matches 0 run kill @e[type=minecraft:end_crystal]
 execute unless score set-map var-game matches 0 run kill @e[type=#minecraft:arrows]
 
 execute unless score set-map var-game matches 0 run kill @e[type=marker,tag=kowloon.condenser]

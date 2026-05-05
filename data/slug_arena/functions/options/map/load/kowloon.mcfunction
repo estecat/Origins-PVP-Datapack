@@ -1,5 +1,3 @@
-kill @e[type=minecraft:end_crystal]
-
 # Clone
 clone 586 -6 -355 654 -1 -287 278 85 -107
 clone 586 0 -355 654 5 -287 278 91 -107
