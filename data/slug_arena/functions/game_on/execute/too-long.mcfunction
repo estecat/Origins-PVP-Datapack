@@ -6,4 +6,10 @@ execute if score youretakingtoolong var-game matches 4800.. run effect give @a[t
 execute if score youretakingtoolong var-game matches 4800.. if score youretakingtoolong-once var-game matches 0 as @a at @s run playsound minecraft:entity.wither.ambient master @s ~ ~ ~ 0.8 1
 execute if score youretakingtoolong var-game matches 4800.. if score youretakingtoolong-once var-game matches 0 run scoreboard players set youretakingtoolong-once var-game -1
 
+execute as @e[type=slugterra:boon_doc] if score youretakingtoolong var-game matches 6000.. at @s run globalsound master slugterra:slugdeath @a ~ ~ ~ 1 1
+execute as @e[type=slugterra:boon_doc] if score youretakingtoolong var-game matches 6000.. run tp @s 0 0 0
 execute as @e[type=slugterra:boon_doc] if score youretakingtoolong var-game matches 6000.. run data modify entity @s Health set value 0
+
+execute as @e[type=slugterra:boon_doc_white] if score youretakingtoolong var-game matches 6000.. at @s run globalsound master slugterra:slugdeath @a ~ ~ ~ 1 1
+execute as @e[type=slugterra:boon_doc_white] if score youretakingtoolong var-game matches 6000.. run tp @s 0 0 0
+execute as @e[type=slugterra:boon_doc_white] if score youretakingtoolong var-game matches 6000.. run data modify entity @s Health set value 0
