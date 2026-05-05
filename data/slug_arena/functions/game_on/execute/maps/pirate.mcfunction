@@ -81,10 +81,10 @@ execute if score west-fuse var-pirate matches 65.. run particle large_smoke 299 
 
 
 # End
-execute if score north-fuse var-pirate matches 65.. as @a[tag=in-cannon.north] run tag @s remove in-cannon
-execute if score south-fuse var-pirate matches 65.. as @a[tag=in-cannon.south] run tag @s remove in-cannon
-execute if score east-fuse var-pirate matches 65.. as @a[tag=in-cannon.east] run tag @s remove in-cannon
-execute if score west-fuse var-pirate matches 65.. as @a[tag=in-cannon.west] run tag @s remove in-cannon
+execute if score north-fuse var-pirate matches 65.. as @a[tag=in-cannon.north] run tag @s remove in-cannon.north
+execute if score south-fuse var-pirate matches 65.. as @a[tag=in-cannon.south] run tag @s remove in-cannon.south
+execute if score east-fuse var-pirate matches 65.. as @a[tag=in-cannon.east] run tag @s remove in-cannon.east
+execute if score west-fuse var-pirate matches 65.. as @a[tag=in-cannon.west] run tag @s remove in-cannon.west
 
 execute if score north-fuse var-pirate matches 65.. run scoreboard players set north-fuse var-pirate 0
 execute if score south-fuse var-pirate matches 65.. run scoreboard players set south-fuse var-pirate 0
