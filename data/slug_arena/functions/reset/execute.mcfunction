@@ -105,9 +105,3 @@ setblock 271 110 -83 air
 setblock 322 110 -114 air
 setblock 353 110 -63 air
 schedule function slug_arena:reset/schedules/dropper 4
-
-# Blasters
-scoreboard players set west-change var-blaster 0
-scoreboard players set east-change var-blaster 0
-scoreboard players set north-change var-blaster 0
-scoreboard players set south-change var-blaster 0
