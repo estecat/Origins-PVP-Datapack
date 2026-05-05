@@ -26,6 +26,8 @@ execute unless score set-map var-game matches 0 run kill @e[type=marker,tag=pira
 execute unless score set-map var-game matches 0 run kill @e[type=marker,tag=pirate.cannon-east]
 execute unless score set-map var-game matches 0 run kill @e[type=marker,tag=pirate.cannon-west]
 
+execute unless score set-map var-game matches 0 run kill @e[type=slugterra:mutated_shark]
+
 # Maps
 execute if score set-map var-game matches 1 run function slug_arena:options/map/load/medieval
 execute if score set-map var-game matches 1 run tellraw @a [{"text": "Selected: ", "color": "yellow"}, {"text": "Medieval Siege", "color": "dark_green", "bold": true}]

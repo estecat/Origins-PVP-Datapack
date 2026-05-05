@@ -30,6 +30,11 @@ summon marker 312 101 -64 {Tags:["pirate.cannon-south"],data:{name:"pirate.canno
 summon marker 321 101 -73 {Tags:["pirate.cannon-east"],data:{name:"pirate.cannon-east"}}
 summon marker 303 101 -73 {Tags:["pirate.cannon-west"],data:{name:"pirate.cannon-west"}}
 
+summon slugterra:mutated_shark 332 95 -74
+summon slugterra:mutated_shark 293 95 -73
+summon slugterra:mutated_shark 312 95 -92
+summon slugterra:mutated_shark 312 95 -54
+
 # End
 scoreboard players set map var-game 4
 data modify storage slug_arena:settings map set value "§5Legacy"
