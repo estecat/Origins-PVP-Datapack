@@ -1,5 +1,6 @@
 execute if score start var-game matches 1 run function slug_arena:game_on/execute/on-game-start
 
+execute if score start var-game matches 1 run function slug_arena:game_on/execute/item-owner
 execute if score start var-game matches 1 run function slug_arena:game_on/execute/player-id
 execute if score start var-game matches 1 run function slug_arena:game_on/execute/player-death
 
