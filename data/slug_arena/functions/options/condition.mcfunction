@@ -3,6 +3,7 @@ execute as @a unless score @s options matches -1.. run scoreboard players set @s
 ## Reset game
 execute if score allow-reset var-game matches 1 as @a if score @s options matches -1 run scoreboard players set reset var-game 1
 execute if score allow-reset var-game matches 1 as @a if score @s options matches -1 run tellraw @a {"text": "Game reset!", "color": "yellow"}
+execute if score allow-reset var-game matches 0 as @a if score @s options matches -1 run tellraw @a {"text": "Reset is disabled! Only operators may reset.", "color": "red"}
 
 ## Checks
 # Location
