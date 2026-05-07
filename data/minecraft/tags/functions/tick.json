@@ -16,6 +16,7 @@
     "slug_arena:general/players-away",
     "slug_arena:general/punch-reset",
     "slug_arena:general/spectators",
-    "slug_arena:general/command-plate"
+    "slug_arena:general/command-plate",
+    "slug_arena:general/parkpour-fall-tp"
   ]
 }

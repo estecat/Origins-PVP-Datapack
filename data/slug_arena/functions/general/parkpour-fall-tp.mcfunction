@@ -1,0 +1,1 @@
+execute positioned 401 16 -263 as @a if entity @s[dx=18,dy=3,dz=159] run tp @s 410 23 -259
