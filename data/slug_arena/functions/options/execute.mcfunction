@@ -51,3 +51,4 @@ execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 16 run
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 17 run scoreboard players set set-map var-game 7
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 18 run scoreboard players set set-map var-game 8
 execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 19 run scoreboard players set set-map var-game 9
+execute as @a[x=312,y=29,z=-282,distance=..5] if score @s options matches 20 run scoreboard players set set-map var-game 10
