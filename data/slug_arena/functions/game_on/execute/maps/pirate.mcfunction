@@ -1,13 +1,13 @@
 ## Tagging
-execute at @e[type=marker,tag=pirate.cannon-north] as @a[tag=player,distance=..1] unless entity @a[tag=in-cannon.north] run tag @s add in-cannon.north
-execute at @e[type=marker,tag=pirate.cannon-south] as @a[tag=player,distance=..1] unless entity @a[tag=in-cannon.south] run tag @s add in-cannon.south
-execute at @e[type=marker,tag=pirate.cannon-east] as @a[tag=player,distance=..1] unless entity @a[tag=in-cannon.east] run tag @s add in-cannon.east
-execute at @e[type=marker,tag=pirate.cannon-west] as @a[tag=player,distance=..1] unless entity @a[tag=in-cannon.west] run tag @s add in-cannon.west
+execute unless entity @a[tag=in-cannon.north] at @e[type=marker,tag=pirate.cannon-north] as @a[tag=player,distance=..1] run tag @s add in-cannon.north
+execute unless entity @a[tag=in-cannon.south] at @e[type=marker,tag=pirate.cannon-south] as @a[tag=player,distance=..1] run tag @s add in-cannon.south
+execute unless entity @a[tag=in-cannon.east] at @e[type=marker,tag=pirate.cannon-east] as @a[tag=player,distance=..1] run tag @s add in-cannon.east
+execute unless entity @a[tag=in-cannon.west] at @e[type=marker,tag=pirate.cannon-west] as @a[tag=player,distance=..1] run tag @s add in-cannon.west
 
-execute at @e[type=marker,tag=pirate.cannon-north] unless entity @a[tag=player,distance=..1] unless score north-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.north
-execute at @e[type=marker,tag=pirate.cannon-south] unless entity @a[tag=player,distance=..1] unless score south-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.south
-execute at @e[type=marker,tag=pirate.cannon-east] unless entity @a[tag=player,distance=..1] unless score east-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.east
-execute at @e[type=marker,tag=pirate.cannon-west] unless entity @a[tag=player,distance=..1] unless score west-fuse var-pirate matches 60.. as @a run tag @s remove in-cannon.west
+execute at @e[type=marker,tag=pirate.cannon-north] as @a unless entity @s[tag=in-cannon.north,distance=..1] unless score north-fuse var-pirate matches 60.. run tag @s remove in-cannon.north
+execute at @e[type=marker,tag=pirate.cannon-south] as @a unless entity @s[tag=in-cannon.south,distance=..1] unless score south-fuse var-pirate matches 60.. run tag @s remove in-cannon.south
+execute at @e[type=marker,tag=pirate.cannon-east] as @a unless entity @s[tag=in-cannon.east,distance=..1] unless score east-fuse var-pirate matches 60.. run tag @s remove in-cannon.east
+execute at @e[type=marker,tag=pirate.cannon-west] as @a unless entity @s[tag=in-cannon.west,distance=..1] unless score west-fuse var-pirate matches 60.. run tag @s remove in-cannon.west
 
 
 ## Reset scores
@@ -53,15 +53,15 @@ execute if score south-fuse var-pirate matches 62 run playsound entity.generic.e
 execute if score east-fuse var-pirate matches 62 run playsound entity.generic.explode master @a 325 101.5 -73 3 1 0
 execute if score west-fuse var-pirate matches 62 run playsound entity.generic.explode master @a 299 101.5 -73 3 1 0
 
-execute if score north-fuse var-pirate matches 62 as @a[tag=in-cannon.north] run data modify entity @s Motion[1] set value 0.9d
-execute if score south-fuse var-pirate matches 62 as @a[tag=in-cannon.south] run data modify entity @s Motion[1] set value 0.9d
-execute if score east-fuse var-pirate matches 62 as @a[tag=in-cannon.east] run data modify entity @s Motion[1] set value 0.9d
-execute if score west-fuse var-pirate matches 62 as @a[tag=in-cannon.west] run data modify entity @s Motion[1] set value 0.9d
+execute if score north-fuse var-pirate matches 62 as @a[tag=in-cannon.north] run data modify entity @s Motion[1] set value 1d
+execute if score south-fuse var-pirate matches 62 as @a[tag=in-cannon.south] run data modify entity @s Motion[1] set value 1d
+execute if score east-fuse var-pirate matches 62 as @a[tag=in-cannon.east] run data modify entity @s Motion[1] set value 1d
+execute if score west-fuse var-pirate matches 62 as @a[tag=in-cannon.west] run data modify entity @s Motion[1] set value 1d
 
-execute if score north-fuse var-pirate matches 62 as @a[tag=in-cannon.north] run data modify entity @s Motion[2] set value -2d
-execute if score south-fuse var-pirate matches 62 as @a[tag=in-cannon.south] run data modify entity @s Motion[2] set value 2d
-execute if score east-fuse var-pirate matches 62 as @a[tag=in-cannon.east] run data modify entity @s Motion[0] set value 2d
-execute if score west-fuse var-pirate matches 62 as @a[tag=in-cannon.west] run data modify entity @s Motion[0] set value -2d
+execute if score north-fuse var-pirate matches 62 as @a[tag=in-cannon.north] run data modify entity @s Motion[2] set value -1.8d
+execute if score south-fuse var-pirate matches 62 as @a[tag=in-cannon.south] run data modify entity @s Motion[2] set value 1.8d
+execute if score east-fuse var-pirate matches 62 as @a[tag=in-cannon.east] run data modify entity @s Motion[0] set value 1.8d
+execute if score west-fuse var-pirate matches 62 as @a[tag=in-cannon.west] run data modify entity @s Motion[0] set value -1.8d
 
 
 execute if score north-fuse var-pirate matches 65.. run particle campfire_cosy_smoke 312 101.5 -86 0 0 0 0.03 50
