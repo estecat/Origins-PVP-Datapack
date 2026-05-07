@@ -1,0 +1,2 @@
+execute positioned 276 -64 -109 as @a if entity @s[dx=72,dy=16,dz=72] run effect give @s night_vision infinite 1 true
+execute positioned 276 -64 -109 as @a unless entity @s[dx=72,dy=16,dz=72] run effect clear @s night_vision
