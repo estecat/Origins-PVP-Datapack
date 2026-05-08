@@ -1,3 +1,7 @@
+## Fall Damage
+execute as @a[tag=player] unless score @s var-pirate matches ..0 run scoreboard players remove @s var-pirate 1
+execute as @a[tag=player] unless score @s var-pirate matches ..0 run data modify entity @s FallDistance set value 0
+
 ## Tagging
 execute unless entity @a[tag=in-cannon.north] at @e[type=marker,tag=pirate.cannon-north] as @a[tag=player,distance=..1] run tag @s add in-cannon.north
 execute unless entity @a[tag=in-cannon.south] at @e[type=marker,tag=pirate.cannon-south] as @a[tag=player,distance=..1] run tag @s add in-cannon.south
@@ -27,7 +31,6 @@ execute if entity @a[tag=in-cannon.north] run scoreboard players add north-fuse 
 execute if entity @a[tag=in-cannon.south] run scoreboard players add south-fuse var-pirate 1
 execute if entity @a[tag=in-cannon.east] run scoreboard players add east-fuse var-pirate 1
 execute if entity @a[tag=in-cannon.west] run scoreboard players add west-fuse var-pirate 1
-
 
 ## Execution
 execute unless score north-fuse var-pirate matches 0 run particle smoke 312 102 -83 0.1 0 0.1 0 1
@@ -62,6 +65,11 @@ execute if score north-fuse var-pirate matches 62 as @a[tag=in-cannon.north] run
 execute if score south-fuse var-pirate matches 62 as @a[tag=in-cannon.south] run data modify entity @s Motion[2] set value 1.7d
 execute if score east-fuse var-pirate matches 62 as @a[tag=in-cannon.east] run data modify entity @s Motion[0] set value 1.7d
 execute if score west-fuse var-pirate matches 62 as @a[tag=in-cannon.west] run data modify entity @s Motion[0] set value -1.7d
+
+execute if score north-fuse var-pirate matches 62 as @a[tag=in-cannon.north] run scoreboard players set @s var-pirate 27
+execute if score south-fuse var-pirate matches 62 as @a[tag=in-cannon.south] run scoreboard players set @s var-pirate 27
+execute if score east-fuse var-pirate matches 62 as @a[tag=in-cannon.east] run scoreboard players set @s var-pirate 27
+execute if score west-fuse var-pirate matches 62 as @a[tag=in-cannon.west] run scoreboard players set @s var-pirate 27
 
 
 execute if score north-fuse var-pirate matches 65.. run particle campfire_cosy_smoke 312 101.5 -86 0 0 0 0.03 50
