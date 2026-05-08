@@ -61,7 +61,6 @@ scoreboard players set fireworks.2v2 var-fireworks 0
 
 
 ## The rest
-gamerule fallDamage false
 kill @e[type=item]
 kill @e[type=minecraft:glow_item_frame,tag=weapon-display]
 

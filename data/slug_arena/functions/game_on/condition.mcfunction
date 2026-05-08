@@ -1,3 +1,4 @@
+execute if score start var-game matches 1 run gamerule fallDamage true
 execute if score start var-game matches 1 run function slug_arena:game_on/execute/on-game-start
 
 execute if score start var-game matches 1 run function slug_arena:game_on/execute/item-owner
