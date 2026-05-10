@@ -18,6 +18,7 @@
     "slug_arena:general/spectators",
     "slug_arena:general/command-plate",
     "slug_arena:general/parkpour-fall-tp",
-    "slug_arena:general/worldborder"
+    "slug_arena:general/worldborder",
+    "slug_arena:general/player-join"
   ]
 }
