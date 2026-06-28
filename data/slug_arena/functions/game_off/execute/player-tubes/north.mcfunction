@@ -2,10 +2,11 @@ execute positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56] if entity @s[tag=player] 
 execute positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56] if entity @s[tag=player] run effect give @s minecraft:slow_falling 1 1 true
 execute positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56] if entity @s[tag=player] run tp @s 312 30 -272
 
-execute if entity @a[tag=player.north] positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56] unless entity @s[tag=player] run tellraw @a[dx=1,dz=1] {"text": "There is already a player on this team!", "color": "red"}
-execute if entity @a[tag=player.north] positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56] run effect give @s minecraft:slow_falling 1 1 true
-execute if entity @a[tag=player.north] positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56] run tp @s 312 30 -272
+execute if entity @a[tag=player.north] positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56,gamemode=!spectator] unless entity @s[tag=player] run tellraw @a[dx=1,dz=1] {"text": "There is already a player on this team!", "color": "red"}
+execute if entity @a[tag=player.north] positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56,gamemode=!spectator] run effect give @s minecraft:slow_falling 1 1 true
+execute if entity @a[tag=player.north] positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56,gamemode=!spectator] run tp @s 312 30 -272
 
-execute unless entity @a[tag=player.north] positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56] unless entity @s[tag=player] run tag @s add player
-execute unless entity @a[tag=player.north] positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56] run tag @s add player.north
-execute positioned 317 24 -267 as @a[dx=1,dz=1,dy=-5] if entity @s[tag=player.north] run tp @s 193 128 -255
+execute unless entity @a[tag=player.north] positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56,gamemode=!spectator] unless entity @s[tag=player] run tag @s add player
+execute unless entity @a[tag=player.north] positioned 317 24 -267 as @a[dx=1,dz=1,dy=-56,gamemode=!spectator] run tag @s add player.north
+execute positioned 305 24 -273 as @a[dx=1,dz=1,dy=-5,gamemode=!spectator] if entity @s[tag=player.north] run gamemode adventure @s
+execute positioned 317 24 -267 as @a[dx=1,dz=1,dy=-5,gamemode=!spectator] if entity @s[tag=player.north] run tp @s 193 128 -255
